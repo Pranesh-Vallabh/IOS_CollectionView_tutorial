@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Punk List View Controller-->
+        <!--List of Beers-->
         <scene sceneID="hNf-dy-3HL">
             <objects>
                 <viewController id="j81-hI-QTa" customClass="PunkListViewController" customModule="SwiftCollectionView" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +78,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xSq-h9-KMn"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WYc-WM-FCI"/>
+                    <navigationItem key="navigationItem" title="List of Beers" id="WYc-WM-FCI"/>
                     <connections>
                         <outlet property="collectionView" destination="02G-92-RzE" id="aet-eS-sV2"/>
                     </connections>

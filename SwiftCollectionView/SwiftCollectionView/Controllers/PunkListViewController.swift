@@ -19,7 +19,6 @@ class PunkListViewController: UIViewController {
         getBeerData()
     }
 
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == Constants.PunkDetailSegueIdentifier {
@@ -77,7 +76,6 @@ extension PunkListViewController {
                 self.beers = retrivedBeers
                 self.collectionView.reloadData()
             }
-            
         }
     }
 }

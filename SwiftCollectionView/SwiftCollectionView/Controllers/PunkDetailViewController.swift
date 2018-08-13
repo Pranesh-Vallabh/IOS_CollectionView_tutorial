@@ -31,6 +31,4 @@ class PunkDetailViewController: UIViewController {
         descriptionLabel.text = beerSelected.description
         tagLineLabel.text = beerSelected.tagline
     }
-
- 
 }
