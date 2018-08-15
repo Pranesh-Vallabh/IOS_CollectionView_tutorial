@@ -7,5 +7,6 @@ target 'SwiftCollectionView' do
 
   # Pods for SwiftCollectionView
   pod 'Alamofire'
+  pod 'AlamofireImage'
 
 end

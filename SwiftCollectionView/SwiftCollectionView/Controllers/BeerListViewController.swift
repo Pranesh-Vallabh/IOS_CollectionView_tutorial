@@ -8,14 +8,18 @@
 
 import UIKit
 
-class PunkListViewController: UIViewController {
+class BeerListViewController: UIViewController {
 
     var beers = [Beer]()
+    
+    lazy var beerListViewModel: BeerListViewModel  = {
+        BeerListViewModel(beerListView: self)
+    }()
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         getBeerData()
     }
 
@@ -23,11 +27,11 @@ class PunkListViewController: UIViewController {
         
         if segue.identifier == Constants.PunkDetailSegueIdentifier {
             
-            guard let punkDetailViewController = segue.destination as? PunkDetailViewController else {
+            guard let punkDetailViewController = segue.destination as? BeerDetailViewController else {
                 return
             }
             
-            guard let punkPhotoViewCell = sender as? PunkPhotoCell else {
+            guard let punkPhotoViewCell = sender as? BeerPhotoCell else {
                 return
             }
             
@@ -40,7 +44,7 @@ class PunkListViewController: UIViewController {
     }
 }
 
-extension PunkListViewController: UICollectionViewDataSource {
+extension BeerListViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -52,30 +56,28 @@ extension PunkListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.PunkCollectionViewCellIdentifier, for: indexPath) as? PunkPhotoCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.PunkCollectionViewCellIdentifier, for: indexPath) as? BeerPhotoCell else {
             return UICollectionViewCell()
         }
         
-        cell.loadData(with: beers[indexPath.row])
+        cell.setupCell(with: beers[indexPath.row])
         
         return cell
     }
 }
 
-extension PunkListViewController {
-    
+extension BeerListViewController : BeerListViewProtocol {
     func getBeerData() {
-        
-        let networkingService = NetworkingService()
-        
-        networkingService.fetchBeerData { (retrivedBeers, error) -> Void in
-            
-            if let error = error {
-                print("Error: \(error.localizedDescription)")
-            } else if let retrivedBeers = retrivedBeers {
-                self.beers = retrivedBeers
-                self.collectionView.reloadData()
-            }
-        }
+        beerListViewModel.getBeerData()
+    }
+    
+    func showErrorMessage(errorMessage: String) {
+        print(errorMessage)
+    }
+    
+    func showBeerList(beers: [Beer]) {
+        self.beers = beers
+        self.collectionView.reloadData()
     }
 }
+

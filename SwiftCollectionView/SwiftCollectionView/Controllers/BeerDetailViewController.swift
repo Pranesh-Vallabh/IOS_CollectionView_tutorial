@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PunkDetailViewController: UIViewController {
+class BeerDetailViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
@@ -27,7 +27,7 @@ class PunkDetailViewController: UIViewController {
             return
         }
         nameLabel.text = beerSelected.name
-        beerImage.imageFromUrl(urlString: beerSelected.imageUrl) 
+        beerImage.loadImageFromUrl(with: beerSelected.imageUrl)
         descriptionLabel.text = beerSelected.description
         tagLineLabel.text = beerSelected.tagline
     }

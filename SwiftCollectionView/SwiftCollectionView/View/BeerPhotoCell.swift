@@ -8,15 +8,15 @@
 
 import UIKit
 
-class PunkPhotoCell: UICollectionViewCell {
+class BeerPhotoCell: UICollectionViewCell {
     
     @IBOutlet weak var beerImage: UIImageView!
     
     @IBOutlet weak var beerNameLabel: UILabel!
    
-    func loadData(with data: Beer ) {
-        beerImage.imageFromUrl(urlString: data.imageUrl)
-        beerNameLabel.text = data.name
+    func setupCell(with beer: Beer ) {
+        beerImage.loadImageFromUrl(with: beer.imageUrl)
+        beerNameLabel.text = beer.name
     }
 }
 

@@ -13,12 +13,15 @@
 		0E21787B211B137300680721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E217879211B137300680721 /* LaunchScreen.storyboard */; };
 		0E217883211B15B700680721 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E217882211B15B700680721 /* Beer.swift */; };
 		0E217885211B17C000680721 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E217884211B17C000680721 /* SampleData.swift */; };
-		0E2178892121562000680721 /* PunkPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178882121562000680721 /* PunkPhotoCell.swift */; };
-		0E21788B212174CA00680721 /* PunkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788A212174CA00680721 /* PunkListViewController.swift */; };
-		0E21788D21217B5C00680721 /* PunkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788C21217B5C00680721 /* PunkDetailViewController.swift */; };
+		0E2178892121562000680721 /* BeerPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178882121562000680721 /* BeerPhotoCell.swift */; };
+		0E21788B212174CA00680721 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788A212174CA00680721 /* BeerListViewController.swift */; };
+		0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788C21217B5C00680721 /* BeerDetailViewController.swift */; };
 		0E21788F2121963C00680721 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788E2121963C00680721 /* Extensions.swift */; };
 		0E21789121219BBB00680721 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21789021219BBB00680721 /* Constants.swift */; };
-		0E21789521219E0800680721 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21789421219E0800680721 /* NetworkingService.swift */; };
+		0E2178CC21242C0600680721 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178CB21242C0600680721 /* BeerListViewModel.swift */; };
+		0E2178CE21243A9300680721 /* BeerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178CD21243A9300680721 /* BeerRepository.swift */; };
+		0E2178D42124B17500680721 /* BeerListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D32124B17500680721 /* BeerListViewProtocol.swift */; };
+		0E2178D62124B1BE00680721 /* BeerRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D52124B1BE00680721 /* BeerRepositoryProtocol.swift */; };
 		AA9CB37B4EBFDA146173A66E /* Pods_SwiftCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,12 +34,15 @@
 		0E21787C211B137300680721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E217882211B15B700680721 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		0E217884211B17C000680721 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
-		0E2178882121562000680721 /* PunkPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkPhotoCell.swift; sourceTree = "<group>"; };
-		0E21788A212174CA00680721 /* PunkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkListViewController.swift; sourceTree = "<group>"; };
-		0E21788C21217B5C00680721 /* PunkDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunkDetailViewController.swift; sourceTree = "<group>"; };
+		0E2178882121562000680721 /* BeerPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPhotoCell.swift; sourceTree = "<group>"; };
+		0E21788A212174CA00680721 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
+		0E21788C21217B5C00680721 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		0E21788E2121963C00680721 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0E21789021219BBB00680721 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		0E21789421219E0800680721 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		0E2178CB21242C0600680721 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		0E2178CD21243A9300680721 /* BeerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepository.swift; sourceTree = "<group>"; };
+		0E2178D32124B17500680721 /* BeerListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewProtocol.swift; sourceTree = "<group>"; };
+		0E2178D52124B1BE00680721 /* BeerRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepositoryProtocol.swift; sourceTree = "<group>"; };
 		29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		2DEFC6B0226207C2F9FB16AA /* Pods-SwiftCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,10 +81,11 @@
 		0E21786F211B137300680721 /* SwiftCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0E2178D0212453B900680721 /* ViewModel */,
+				0E2178CF212453A000680721 /* Repository */,
 				0E21789C2121A3BD00680721 /* Extensions */,
 				0E21789B2121A38400680721 /* SampleData */,
 				0E21789A2121A37D00680721 /* View */,
-				0E2178992121A37300680721 /* Network */,
 				0E2178982121A36100680721 /* Model */,
 				0E2178972121A35800680721 /* Controllers */,
 				0E2178962121A34E00680721 /* Constants */,
@@ -102,8 +109,9 @@
 		0E2178972121A35800680721 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				0E21788A212174CA00680721 /* PunkListViewController.swift */,
-				0E21788C21217B5C00680721 /* PunkDetailViewController.swift */,
+				0E21788C21217B5C00680721 /* BeerDetailViewController.swift */,
+				0E21788A212174CA00680721 /* BeerListViewController.swift */,
+				0E2178D32124B17500680721 /* BeerListViewProtocol.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,18 +124,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		0E2178992121A37300680721 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				0E21789421219E0800680721 /* NetworkingService.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		0E21789A2121A37D00680721 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0E2178882121562000680721 /* PunkPhotoCell.swift */,
+				0E2178882121562000680721 /* BeerPhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +146,23 @@
 				0E21788E2121963C00680721 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E2178CF212453A000680721 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0E2178CD21243A9300680721 /* BeerRepository.swift */,
+				0E2178D52124B1BE00680721 /* BeerRepositoryProtocol.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0E2178D0212453B900680721 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E2178CB21242C0600680721 /* BeerListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7F7A6DCC0A302229CA9D2861 /* Pods */ = {
@@ -242,10 +259,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -277,14 +296,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2178892121562000680721 /* PunkPhotoCell.swift in Sources */,
-				0E21788D21217B5C00680721 /* PunkDetailViewController.swift in Sources */,
+				0E2178CE21243A9300680721 /* BeerRepository.swift in Sources */,
+				0E2178892121562000680721 /* BeerPhotoCell.swift in Sources */,
+				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
+				0E2178D62124B1BE00680721 /* BeerRepositoryProtocol.swift in Sources */,
 				0E217883211B15B700680721 /* Beer.swift in Sources */,
-				0E21789521219E0800680721 /* NetworkingService.swift in Sources */,
+				0E2178CC21242C0600680721 /* BeerListViewModel.swift in Sources */,
 				0E217871211B137300680721 /* AppDelegate.swift in Sources */,
-				0E21788B212174CA00680721 /* PunkListViewController.swift in Sources */,
+				0E21788B212174CA00680721 /* BeerListViewController.swift in Sources */,
 				0E217885211B17C000680721 /* SampleData.swift in Sources */,
 				0E21788F2121963C00680721 /* Extensions.swift in Sources */,
+				0E2178D42124B17500680721 /* BeerListViewProtocol.swift in Sources */,
 				0E21789121219BBB00680721 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,15 +1,15 @@
 //
-//  NetworkingService.swift
+//  BeerRepository.swift
 //  SwiftCollectionView
 //
-//  Created by Pranesh on 2018/08/13.
+//  Created by Pranesh on 2018/08/15.
 //  Copyright © 2018 Pranesh. All rights reserved.
 //
-
-import Foundation
 import Alamofire
 
-class NetworkingService {
+
+
+struct BeerRepository: BeerRepositoryProtocol {
     
     func fetchBeerData(_ completion: @escaping ([Beer]?, Error?) -> Void) {
         var beers = [Beer]()
@@ -37,20 +37,4 @@ class NetworkingService {
         }
     }
     
-    func fetchPunkImage(url: URL, _ completion: @escaping (Data?, Error?) -> Void) {
-        Alamofire.request(url).validate().responseData { (response) in
-            switch response.result {
-            case .success(_):
-                guard let data = response.data else {
-                    let error = NSError(domain: "", code: 200, userInfo: [NSLocalizedDescriptionKey: "No image found"])
-                    completion(nil, error)
-                    return
-                }
-                completion(data, nil)
-            case .failure(let error):
-                completion(nil, error)
-            }
-        }
-    }
 }
-

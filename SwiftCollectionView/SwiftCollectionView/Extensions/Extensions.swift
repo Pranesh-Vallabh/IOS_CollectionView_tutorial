@@ -7,23 +7,33 @@
 //
 
 import UIKit
+import AlamofireImage
+import Alamofire
 
 extension UIImageView {
-    public func imageFromUrl(urlString: String) {
+    public func loadImageFromUrl(with imageUrl: String) {
         
-        guard let url = URL(string: urlString) else {
+        fetchImage(with: imageUrl) { (imageData) in
+            if let imageData = imageData {
+                self.image = UIImage(data: imageData)
+            } else {
+                self.image = UIImage(named: "beerPlaceHolderImage")
+            }
+        }
+        
+    }
+    
+    private func fetchImage(with imageUrl: String, _ completion: @escaping (Data?) -> Void) {
+        guard let url = URL(string: imageUrl) else {
+            completion(nil)
             return
         }
         
-        let networkingService = NetworkingService()
-        networkingService.fetchPunkImage(url: url) { (imageData, error) in
-            
-            if let error = error {
-                print(error.localizedDescription)
-            }
-            
-            if let imageData = imageData {
-                self.image = UIImage(data: imageData)
+        Alamofire.request(url).validate().responseImage{ (response) in
+            if response.result.isSuccess, let imageData = response.data  {
+                completion(imageData)
+            } else {
+                completion(nil)
             }
         }
     }

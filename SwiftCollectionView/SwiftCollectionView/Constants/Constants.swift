@@ -10,6 +10,6 @@ import Foundation
 
 public enum Constants {
     static let ApiUrl = "https://api.punkapi.com/v2/beers"
-    static let PunkCollectionViewCellIdentifier = "PunkCell"
-    static let PunkDetailSegueIdentifier = "showPunkDetails"
+    static let PunkCollectionViewCellIdentifier = "BeerCell"
+    static let PunkDetailSegueIdentifier = "showBeerDetails"
 }
