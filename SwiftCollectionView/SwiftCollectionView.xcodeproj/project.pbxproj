@@ -16,14 +16,33 @@
 		0E2178892121562000680721 /* BeerPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178882121562000680721 /* BeerPhotoCell.swift */; };
 		0E21788B212174CA00680721 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788A212174CA00680721 /* BeerListViewController.swift */; };
 		0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788C21217B5C00680721 /* BeerDetailViewController.swift */; };
-		0E21788F2121963C00680721 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788E2121963C00680721 /* Extensions.swift */; };
+		0E21788F2121963C00680721 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788E2121963C00680721 /* ImageViewExtension.swift */; };
 		0E21789121219BBB00680721 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21789021219BBB00680721 /* Constants.swift */; };
 		0E2178CC21242C0600680721 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178CB21242C0600680721 /* BeerListViewModel.swift */; };
 		0E2178CE21243A9300680721 /* BeerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178CD21243A9300680721 /* BeerRepository.swift */; };
-		0E2178D42124B17500680721 /* BeerListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D32124B17500680721 /* BeerListViewProtocol.swift */; };
-		0E2178D62124B1BE00680721 /* BeerRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D52124B1BE00680721 /* BeerRepositoryProtocol.swift */; };
+		0E2178D42124B17500680721 /* BeerListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D32124B17500680721 /* BeerListViewable.swift */; };
+		0E2178D62124B1BE00680721 /* BeerDataGetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D52124B1BE00680721 /* BeerDataGetable.swift */; };
+		0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */; };
+		0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434122125A4900055B736 /* ImageViewDownloadable.swift */; };
+		0E4434152126A8E90055B736 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434142126A8E90055B736 /* BeerRepositoryTests.swift */; };
+		0E4434192126A9E20055B736 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434182126A9E20055B736 /* BeerListViewModelTests.swift */; };
+		0E44341D2126BCCD0055B736 /* FailedBeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E44341C2126BCCD0055B736 /* FailedBeerListViewModel.swift */; };
+		0E4434202126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E44341F2126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift */; };
+		0E4434222126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434212126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift */; };
+		0E4434242126BE800055B736 /* SuccessBeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434232126BE800055B736 /* SuccessBeerListViewModel.swift */; };
+		0E4434262126BEC40055B736 /* MockBeerListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434252126BEC40055B736 /* MockBeerListViewable.swift */; };
 		AA9CB37B4EBFDA146173A66E /* Pods_SwiftCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0E4433D3212585DE0055B736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E217865211B137300680721 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E21786C211B137300680721;
+			remoteInfo = SwiftCollectionView;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0E21786D211B137300680721 /* SwiftCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,12 +56,23 @@
 		0E2178882121562000680721 /* BeerPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPhotoCell.swift; sourceTree = "<group>"; };
 		0E21788A212174CA00680721 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		0E21788C21217B5C00680721 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
-		0E21788E2121963C00680721 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0E21788E2121963C00680721 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		0E21789021219BBB00680721 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E2178CB21242C0600680721 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
 		0E2178CD21243A9300680721 /* BeerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepository.swift; sourceTree = "<group>"; };
-		0E2178D32124B17500680721 /* BeerListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewProtocol.swift; sourceTree = "<group>"; };
-		0E2178D52124B1BE00680721 /* BeerRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepositoryProtocol.swift; sourceTree = "<group>"; };
+		0E2178D32124B17500680721 /* BeerListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewable.swift; sourceTree = "<group>"; };
+		0E2178D52124B1BE00680721 /* BeerDataGetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDataGetable.swift; sourceTree = "<group>"; };
+		0E4433CE212585DE0055B736 /* SwiftCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewTests.swift; sourceTree = "<group>"; };
+		0E4433D2212585DE0055B736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E4434122125A4900055B736 /* ImageViewDownloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDownloadable.swift; sourceTree = "<group>"; };
+		0E4434142126A8E90055B736 /* BeerRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepositoryTests.swift; sourceTree = "<group>"; };
+		0E4434182126A9E20055B736 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
+		0E44341C2126BCCD0055B736 /* FailedBeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedBeerListViewModel.swift; sourceTree = "<group>"; };
+		0E44341F2126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMockRespositoryGetBeerData.swift; sourceTree = "<group>"; };
+		0E4434212126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedMockRespositoryGetBeerData.swift; sourceTree = "<group>"; };
+		0E4434232126BE800055B736 /* SuccessBeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessBeerListViewModel.swift; sourceTree = "<group>"; };
+		0E4434252126BEC40055B736 /* MockBeerListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBeerListViewable.swift; sourceTree = "<group>"; };
 		29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		2DEFC6B0226207C2F9FB16AA /* Pods-SwiftCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +87,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E4433CB212585DE0055B736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0E21786F211B137300680721 /* SwiftCollectionView */,
+				0E4433CF212585DE0055B736 /* SwiftCollectionViewTests */,
 				0E21786E211B137300680721 /* Products */,
 				7F7A6DCC0A302229CA9D2861 /* Pods */,
 				D08555DC675384CFFD2F1DA0 /* Frameworks */,
@@ -74,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				0E21786D211B137300680721 /* SwiftCollectionView.app */,
+				0E4433CE212585DE0055B736 /* SwiftCollectionViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,7 +150,7 @@
 			children = (
 				0E21788C21217B5C00680721 /* BeerDetailViewController.swift */,
 				0E21788A212174CA00680721 /* BeerListViewController.swift */,
-				0E2178D32124B17500680721 /* BeerListViewProtocol.swift */,
+				0E2178D32124B17500680721 /* BeerListViewable.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -143,7 +182,8 @@
 		0E21789C2121A3BD00680721 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0E21788E2121963C00680721 /* Extensions.swift */,
+				0E21788E2121963C00680721 /* ImageViewExtension.swift */,
+				0E4434122125A4900055B736 /* ImageViewDownloadable.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -152,7 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				0E2178CD21243A9300680721 /* BeerRepository.swift */,
-				0E2178D52124B1BE00680721 /* BeerRepositoryProtocol.swift */,
+				0E2178D52124B1BE00680721 /* BeerDataGetable.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -163,6 +203,30 @@
 				0E2178CB21242C0600680721 /* BeerListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E4433CF212585DE0055B736 /* SwiftCollectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				0E44341E2126BD890055B736 /* Mocked Classes */,
+				0E4434182126A9E20055B736 /* BeerListViewModelTests.swift */,
+				0E4434142126A8E90055B736 /* BeerRepositoryTests.swift */,
+				0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */,
+				0E4433D2212585DE0055B736 /* Info.plist */,
+			);
+			path = SwiftCollectionViewTests;
+			sourceTree = "<group>";
+		};
+		0E44341E2126BD890055B736 /* Mocked Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E44341F2126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift */,
+				0E4434212126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift */,
+				0E4434232126BE800055B736 /* SuccessBeerListViewModel.swift */,
+				0E44341C2126BCCD0055B736 /* FailedBeerListViewModel.swift */,
+				0E4434252126BEC40055B736 /* MockBeerListViewable.swift */,
+			);
+			path = "Mocked Classes";
 			sourceTree = "<group>";
 		};
 		7F7A6DCC0A302229CA9D2861 /* Pods */ = {
@@ -204,6 +268,24 @@
 			productReference = 0E21786D211B137300680721 /* SwiftCollectionView.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0E4433CD212585DE0055B736 /* SwiftCollectionViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4433D7212585DE0055B736 /* Build configuration list for PBXNativeTarget "SwiftCollectionViewTests" */;
+			buildPhases = (
+				0E4433CA212585DE0055B736 /* Sources */,
+				0E4433CB212585DE0055B736 /* Frameworks */,
+				0E4433CC212585DE0055B736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E4433D4212585DE0055B736 /* PBXTargetDependency */,
+			);
+			name = SwiftCollectionViewTests;
+			productName = SwiftCollectionViewTests;
+			productReference = 0E4433CE212585DE0055B736 /* SwiftCollectionViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -216,6 +298,10 @@
 				TargetAttributes = {
 					0E21786C211B137300680721 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					0E4433CD212585DE0055B736 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0E21786C211B137300680721;
 					};
 				};
 			};
@@ -233,6 +319,7 @@
 			projectRoot = "";
 			targets = (
 				0E21786C211B137300680721 /* SwiftCollectionView */,
+				0E4433CD212585DE0055B736 /* SwiftCollectionViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +332,13 @@
 				0E21787B211B137300680721 /* LaunchScreen.storyboard in Resources */,
 				0E217878211B137300680721 /* Assets.xcassets in Resources */,
 				0E217876211B137300680721 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E4433CC212585DE0055B736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,19 +393,43 @@
 				0E2178CE21243A9300680721 /* BeerRepository.swift in Sources */,
 				0E2178892121562000680721 /* BeerPhotoCell.swift in Sources */,
 				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
-				0E2178D62124B1BE00680721 /* BeerRepositoryProtocol.swift in Sources */,
+				0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */,
+				0E2178D62124B1BE00680721 /* BeerDataGetable.swift in Sources */,
 				0E217883211B15B700680721 /* Beer.swift in Sources */,
 				0E2178CC21242C0600680721 /* BeerListViewModel.swift in Sources */,
 				0E217871211B137300680721 /* AppDelegate.swift in Sources */,
 				0E21788B212174CA00680721 /* BeerListViewController.swift in Sources */,
 				0E217885211B17C000680721 /* SampleData.swift in Sources */,
-				0E21788F2121963C00680721 /* Extensions.swift in Sources */,
-				0E2178D42124B17500680721 /* BeerListViewProtocol.swift in Sources */,
+				0E21788F2121963C00680721 /* ImageViewExtension.swift in Sources */,
+				0E2178D42124B17500680721 /* BeerListViewable.swift in Sources */,
 				0E21789121219BBB00680721 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E4433CA212585DE0055B736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E4434262126BEC40055B736 /* MockBeerListViewable.swift in Sources */,
+				0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */,
+				0E4434222126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift in Sources */,
+				0E4434202126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift in Sources */,
+				0E4434192126A9E20055B736 /* BeerListViewModelTests.swift in Sources */,
+				0E4434152126A8E90055B736 /* BeerRepositoryTests.swift in Sources */,
+				0E44341D2126BCCD0055B736 /* FailedBeerListViewModel.swift in Sources */,
+				0E4434242126BE800055B736 /* SuccessBeerListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E4433D4212585DE0055B736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E21786C211B137300680721 /* SwiftCollectionView */;
+			targetProxy = 0E4433D3212585DE0055B736 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0E217874211B137300680721 /* Main.storyboard */ = {
@@ -483,6 +601,44 @@
 			};
 			name = Release;
 		};
+		0E4433D5212585DE0055B736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pranesh.SwiftCollectionViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCollectionView.app/SwiftCollectionView";
+			};
+			name = Debug;
+		};
+		0E4433D6212585DE0055B736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SwiftCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pranesh.SwiftCollectionViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftCollectionView.app/SwiftCollectionView";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -500,6 +656,15 @@
 			buildConfigurations = (
 				0E217880211B137300680721 /* Debug */,
 				0E217881211B137300680721 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E4433D7212585DE0055B736 /* Build configuration list for PBXNativeTarget "SwiftCollectionViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E4433D5212585DE0055B736 /* Debug */,
+				0E4433D6212585DE0055B736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

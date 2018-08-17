@@ -10,11 +10,11 @@ import UIKit
 
 class BeerListViewModel {
     
-    private weak var beerListView : BeerListViewProtocol?
+    private weak var beerListView : BeerListViewable?
     
-    let beerRepository = BeerRepository()
+    private let beerRepository = BeerRepository()
     
-    init(beerListView: BeerListViewProtocol) {
+    init(beerListView: BeerListViewable) {
         self.beerListView = beerListView
     }
     
@@ -27,15 +27,10 @@ class BeerListViewModel {
                     return
                 }
                 
-                if let error = error {
-                    
-                    DispatchQueue.main.async {
+                DispatchQueue.main.async {
+                    if let error = error {
                         beerListView.showErrorMessage(errorMessage: error.localizedDescription)
-                    }
-                    
-                } else if let retrivedBeers = retrivedBeers {
-                    
-                    DispatchQueue.main.async {
+                    } else if let retrivedBeers = retrivedBeers {
                         beerListView.showBeerList(beers: retrivedBeers)
                     }
                 }

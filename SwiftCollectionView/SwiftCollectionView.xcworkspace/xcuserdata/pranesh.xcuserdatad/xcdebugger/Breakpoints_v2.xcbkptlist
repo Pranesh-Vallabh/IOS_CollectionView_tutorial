@@ -41,46 +41,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftCollectionView/ViewModel/BeerListViewModel.swift"
-            timestampString = "556053197.627701"
+            filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
+            timestampString = "556190645.329747"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "getBeerData()"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "testGetBeerDataInvokesShowBeerList()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Array&lt;SwiftCollectionView.Beer&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in SwiftCollectionView.BeerListViewModel.getBeerData() -&gt; ()"
-                  moduleName = "SwiftCollectionView"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pranesh/IOS_CollectionView_tutorial/SwiftCollectionView/SwiftCollectionView/ViewModel/BeerListViewModel.swift"
-                  timestampString = "556029785.971746"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "955">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #3 () -&gt; () in closure #1 (Swift.Optional&lt;Swift.Array&lt;SwiftCollectionView.Beer&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 () -&gt; () in SwiftCollectionView.BeerListViewModel.getBeerData() -&gt; ()"
-                  moduleName = "SwiftCollectionView"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pranesh/IOS_CollectionView_tutorial/SwiftCollectionView/SwiftCollectionView/ViewModel/BeerListViewModel.swift"
-                  timestampString = "556029785.974363"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

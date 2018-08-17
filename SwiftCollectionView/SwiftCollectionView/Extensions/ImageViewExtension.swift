@@ -10,7 +10,7 @@ import UIKit
 import AlamofireImage
 import Alamofire
 
-extension UIImageView {
+extension UIImageView: ImageViewDownloadable {
     public func loadImageFromUrl(with imageUrl: String) {
         
         fetchImage(with: imageUrl) { (imageData) in

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pranesh. All rights reserved.
 //
 
-protocol BeerListViewProtocol : class {
+protocol BeerListViewable : class {
     func getBeerData()
     func showErrorMessage(errorMessage: String)
     func showBeerList(beers: [Beer])

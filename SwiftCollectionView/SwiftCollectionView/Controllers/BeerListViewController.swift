@@ -66,7 +66,7 @@ extension BeerListViewController: UICollectionViewDataSource {
     }
 }
 
-extension BeerListViewController : BeerListViewProtocol {
+extension BeerListViewController : BeerListViewable {
     func getBeerData() {
         beerListViewModel.getBeerData()
     }

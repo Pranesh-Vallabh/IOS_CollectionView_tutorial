@@ -7,9 +7,7 @@
 //
 import Alamofire
 
-
-
-struct BeerRepository: BeerRepositoryProtocol {
+struct BeerRepository: BeerDataGetable {
     
     func fetchBeerData(_ completion: @escaping ([Beer]?, Error?) -> Void) {
         var beers = [Beer]()
