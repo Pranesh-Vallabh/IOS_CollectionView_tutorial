@@ -78,7 +78,7 @@ class BeerListViewModelTests: XCTestCase {
         mainQueue.sync {
         }
         
-        failedMockRespository.verify()
+        failedMockRespository.verifyOnce()
         mockBeerListViewable.verifyBeerListFailure()
     }
     

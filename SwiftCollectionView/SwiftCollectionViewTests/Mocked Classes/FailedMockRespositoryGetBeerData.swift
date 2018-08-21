@@ -20,7 +20,7 @@ class FailedMockRespositoryGetBeerData: BeerDataGetable {
         completion(nil, error)
     }
     
-    func verify(){
+    func verifyOnce(){
         XCTAssertEqual(fetchBeerDataCounter, 1, "Expected fetchBeerData method to be called once")
     }
 }
