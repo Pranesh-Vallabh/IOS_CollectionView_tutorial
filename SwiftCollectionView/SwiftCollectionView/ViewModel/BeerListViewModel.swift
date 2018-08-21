@@ -12,22 +12,28 @@ class BeerListViewModel {
     
     private weak var beerListView : BeerListViewable?
     
-    private let beerRepository = BeerRepository()
+    private var beerRepository: BeerDataGetable?
     
-    init(beerListView: BeerListViewable) {
+    init(beerListView: BeerListViewable?, repo: BeerDataGetable?) {
         self.beerListView = beerListView
+        self.beerRepository = repo
     }
     
-    func getBeerData() {
+    func getBeerData(onMainQueue mainQueue: DispatchQueue = DispatchQueue.main, onGlobalQueue globalQueue: DispatchQueue = DispatchQueue.global()) {
         
-        DispatchQueue.global().async {
-            self.beerRepository.fetchBeerData { (retrivedBeers, error) -> Void in
+        guard let beerRepository = beerRepository else {
+            return
+        }
+        
+        guard let beerListView = self.beerListView else {
+            return
+        }
+        
+        globalQueue.async {
+            
+            beerRepository.fetchBeerData { (retrivedBeers, error) -> Void in
                 
-                guard let beerListView = self.beerListView else {
-                    return
-                }
-                
-                DispatchQueue.main.async {
+                mainQueue.async {
                     if let error = error {
                         beerListView.showErrorMessage(errorMessage: error.localizedDescription)
                     } else if let retrivedBeers = retrivedBeers {

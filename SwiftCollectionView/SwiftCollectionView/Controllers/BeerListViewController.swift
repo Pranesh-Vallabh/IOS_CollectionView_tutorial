@@ -13,7 +13,7 @@ class BeerListViewController: UIViewController {
     var beers = [Beer]()
     
     lazy var beerListViewModel: BeerListViewModel  = {
-        BeerListViewModel(beerListView: self)
+        BeerListViewModel(beerListView: self, repo: BeerRepository())
     }()
     
     @IBOutlet weak var collectionView: UICollectionView!

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import XCTest
 @testable import SwiftCollectionView
 
 class FailedMockRespositoryGetBeerData: BeerDataGetable {
@@ -17,5 +18,9 @@ class FailedMockRespositoryGetBeerData: BeerDataGetable {
         fetchBeerDataCounter += 1
         let error = NSError(domain: "", code: 200, userInfo: [NSLocalizedDescriptionKey: "Error message"])
         completion(nil, error)
+    }
+    
+    func verify(){
+        XCTAssertEqual(fetchBeerDataCounter, 1, "Expected fetchBeerData method to be called once")
     }
 }

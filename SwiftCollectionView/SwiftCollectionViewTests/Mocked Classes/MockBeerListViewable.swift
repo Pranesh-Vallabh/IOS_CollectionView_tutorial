@@ -6,6 +6,7 @@
 //  Copyright © 2018 Pranesh. All rights reserved.
 //
 
+import XCTest
 @testable import SwiftCollectionView
 
 class MockBeerListViewable: BeerListViewable {
@@ -18,16 +19,38 @@ class MockBeerListViewable: BeerListViewable {
         getBeerDataCounter += 1
     }
     
-    var showErrorMessageCounter: Int = 0
+     var showErrorMessageCounter: Int = 0
     
     func showErrorMessage(errorMessage: String) {
-        showErrorMessageCounter += 1
+        showErrorMessageCounter =  showErrorMessageCounter + 1
     }
     
-    var showBeerListCounter: Int = 0
+     var showBeerListCounter: Int = 0
     
     func showBeerList(beers: [Beer]) {
         self.beers = beers
-        showBeerListCounter += 1
+        showBeerListCounter = showBeerListCounter +  1
+        print("Inside showBeerList function showBeerListCounter: " + String(showBeerListCounter) )
     }
+    
+    func verifyBeerListSuccess() {
+        XCTAssertEqual(getBeerDataCounter, 0, "Expected getBeerData method to be called zero times")
+        XCTAssertEqual(showErrorMessageCounter, 0, "Expected showErrorMessage method to be called zero times")
+        XCTAssertEqual(showBeerListCounter, 1, "Expected showBeerList method to be called once")
+        XCTAssertEqual(self.beers.count, SampleData.generateBeerData().count, "Expected beers array count equal to SampleData.generateBeerData count")
+        XCTAssertEqual(self.beers[0].name, SampleData.generateBeerData()[0].name, "Expected beers.name object to be equal")
+    }
+    
+    func verifyBeerListFailure() {
+        XCTAssertEqual(getBeerDataCounter, 0, "Expected getBeerData method to be called zero times")
+        XCTAssertEqual(showErrorMessageCounter, 1, "Expected showErrorMessage method to be called once")
+        XCTAssertEqual(showBeerListCounter, 0, "Expected showBeerList method to be called zero times")
+    }
+    
+    func verifyNone() {
+        XCTAssertEqual(getBeerDataCounter, 0, "Expected getBeerData method to be called zero times")
+        XCTAssertEqual(showErrorMessageCounter, 0, "Expected showErrorMessage method to be called zero times")
+        XCTAssertEqual(showBeerListCounter, 0, "Expected showBeerList method to be called zero times")
+    }
+    
 }

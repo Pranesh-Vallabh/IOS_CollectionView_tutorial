@@ -7,6 +7,7 @@
 //
 
 @testable import SwiftCollectionView
+import XCTest
 
 class SuccessMockRespositoryGetBeerData: BeerDataGetable {
     
@@ -15,5 +16,13 @@ class SuccessMockRespositoryGetBeerData: BeerDataGetable {
     func fetchBeerData(_ completion: @escaping ([Beer]?, Error?) -> Void) {
         fetchBeerDataCounter +=  1
         completion(SampleData.generateBeerData(), nil)
+    }
+    
+    func verifyOnce(){
+        XCTAssertEqual(fetchBeerDataCounter, 1, "Expected fetchBeerData method to be called once")
+    }
+    
+    func verifyNone() {
+        XCTAssertEqual(fetchBeerDataCounter, 0, "Expected fetchBeerData method to be called zero times")
     }
 }
