@@ -76,7 +76,7 @@ class BeerRepositoryTests: XCTestCase {
             }
             
             XCTAssertEqual(error.localizedDescription, "Error message", "Excepted error.localizedDescription to contain \"Error message\"")
-            failedMockRespository.verify()
+            failedMockRespository.verifyOnce()
         }
     }
     
