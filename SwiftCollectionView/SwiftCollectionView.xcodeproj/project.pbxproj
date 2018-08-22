@@ -23,7 +23,7 @@
 		0E2178D42124B17500680721 /* BeerListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D32124B17500680721 /* BeerListViewable.swift */; };
 		0E2178D62124B1BE00680721 /* BeerDataGetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D52124B1BE00680721 /* BeerDataGetable.swift */; };
 		0E429593212C144A0081BC41 /* MockRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E429592212C144A0081BC41 /* MockRespository.swift */; };
-		0E429595212D3A5F0081BC41 /* .codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E429594212D3A5F0081BC41 /* .codecov.yml */; };
+		0E429597212D44A60081BC41 /* .codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E429596212D44A60081BC41 /* .codecov.yml */; };
 		0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */; };
 		0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434122125A4900055B736 /* ImageViewDownloadable.swift */; };
 		0E4434152126A8E90055B736 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434142126A8E90055B736 /* BeerRepositoryTests.swift */; };
@@ -63,7 +63,7 @@
 		0E2178D32124B17500680721 /* BeerListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewable.swift; sourceTree = "<group>"; };
 		0E2178D52124B1BE00680721 /* BeerDataGetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDataGetable.swift; sourceTree = "<group>"; };
 		0E429592212C144A0081BC41 /* MockRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRespository.swift; sourceTree = "<group>"; };
-		0E429594212D3A5F0081BC41 /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codecov.yml; sourceTree = "<group>"; };
+		0E429596212D44A60081BC41 /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .codecov.yml; sourceTree = "<group>"; };
 		0E4433CE212585DE0055B736 /* SwiftCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewTests.swift; sourceTree = "<group>"; };
 		0E4433D2212585DE0055B736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		0E217864211B137300680721 = {
 			isa = PBXGroup;
 			children = (
-				0E429594212D3A5F0081BC41 /* .codecov.yml */,
+				0E429596212D44A60081BC41 /* .codecov.yml */,
 				0E21786F211B137300680721 /* SwiftCollectionView */,
 				0E4433CF212585DE0055B736 /* SwiftCollectionViewTests */,
 				0E21786E211B137300680721 /* Products */,
@@ -330,7 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E21787B211B137300680721 /* LaunchScreen.storyboard in Resources */,
-				0E429595212D3A5F0081BC41 /* .codecov.yml in Resources */,
+				0E429597212D44A60081BC41 /* .codecov.yml in Resources */,
 				0E217878211B137300680721 /* Assets.xcassets in Resources */,
 				0E217876211B137300680721 /* Main.storyboard in Resources */,
 			);
