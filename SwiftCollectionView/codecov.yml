@@ -3,7 +3,7 @@ codecov:
     token: 7af58a49-33fe-43f2-bf72-debfd15a19cf
 
 ignore:
-    - "SwiftCollectionView/Pods"
-    - "SwiftCollectionView/SwiftCollectionViewTests"
+    - "SwiftCollectionView/Pods/.*"
+    - "SwiftCollectionView/SwiftCollectionViewTests/.*"
 
 
