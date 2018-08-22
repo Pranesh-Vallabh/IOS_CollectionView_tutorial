@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:codecov.yml">
+   </FileRef>
+   <FileRef
       location = "group:SwiftCollectionView.xcodeproj">
    </FileRef>
    <FileRef
