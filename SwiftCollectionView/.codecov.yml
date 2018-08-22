@@ -1,0 +1,5 @@
+
+ignore:
+    "^IOS_CollectionView_tutorial/SwiftCollectionview/Pods/.*"
+ignore:
+    "^IOS_CollectionView_tutorial/SwiftCollectionView/SwiftCollectionViewTests.*"
