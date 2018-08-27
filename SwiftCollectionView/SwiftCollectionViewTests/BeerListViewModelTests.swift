@@ -1,127 +1,99 @@
 //
-//  BeerListViewModel.swift
+//  BeerListViewModel2Tests.swift
 //  SwiftCollectionViewTests
 //
-//  Created by Pranesh on 2018/08/17.
+//  Created by Pranesh on 2018/08/22.
 //  Copyright © 2018 Pranesh. All rights reserved.
 //
 
 import XCTest
+import Cuckoo
+
 @testable import SwiftCollectionView
 
 class BeerListViewModelTests: XCTestCase {
-    
-    var successMockRespository: SuccessMockRespositoryGetBeerData?
-    var failedMockRespository: FailedMockRespositoryGetBeerData?
-    var mockBeerListViewable: MockBeerListViewable?
+  
+    let mockBeerListView: MockBeerListViewable = MockBeerListViewable()
+    let mockBeerRepository: MockBeerDataGetable = MockBeerDataGetable()
+    let systemUnderTests = BeerListViewModel()
+
+    var globalAsyncExpectation: XCTestExpectation?
+    var mainAsyncExpectation: XCTestExpectation?
     
     override func setUp() {
         super.setUp()
-        mockBeerListViewable = MockBeerListViewable()
-        successMockRespository = SuccessMockRespositoryGetBeerData()
-        failedMockRespository = FailedMockRespositoryGetBeerData()
+        globalAsyncExpectation = expectation(description: "Global async")
+        mainAsyncExpectation = expectation(description: "Main async")
     }
     
     override func tearDown() {
-        mockBeerListViewable = nil
-        successMockRespository = nil
-        failedMockRespository = nil
+        globalAsyncExpectation = nil
+        mainAsyncExpectation = nil
         super.tearDown()
     }
     
     func testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully() {
-        
-        guard let mockBeerListViewable = mockBeerListViewable else {
-            XCTFail("Expected non-nil mockBeerListViewable object")
-            return
+        Resolver.reset()
+        stub(mockBeerRepository){ (mock) in
+            when(mock.fetchBeerData(any())).then { completion in
+                completion(SampleData.generateBeerData(),nil)
+                self.globalAsyncExpectation?.fulfill()
+            }
         }
+        setupStubsForBeerListViewable()
+        setupDependencyContainerForBeerListViewableAndBeerDataGetable()
         
-        guard let successMockRespository = successMockRespository else {
-            XCTFail("Expected non-nil successMockRespository object")
-            return
-        }
-        let mainQueue = DispatchQueue(label: "BeerListViewModelTest-mainQueue")
-        let globalQueue = DispatchQueue(label: "BeerListViewModelTest-globalQueue")
-        let systemTest = BeerListViewModel(beerListView: mockBeerListViewable, repo: successMockRespository)
-        systemTest.getBeerData(onMainQueue: mainQueue, onGlobalQueue: globalQueue)
+        systemUnderTests.getBeerData()
+        wait(for: [globalAsyncExpectation!, mainAsyncExpectation!], timeout: 20)
         
-        globalQueue.sync {
-        }
-        
-        mainQueue.sync {
-        }
-
-        successMockRespository.verifyOnce()
-        mockBeerListViewable.verifyBeerListSuccess()
+        verify(mockBeerRepository, times(1)).fetchBeerData(any())
+        verify(mockBeerListView, times(1)).showBeerList(beers: equal(to: SampleData.generateBeerData()))
+        verify(mockBeerListView, never()).showErrorMessage(errorMessage: any())
     }
     
     func testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError() {
-       
-        guard let mockBeerListViewable = mockBeerListViewable else {
-            XCTFail("Expected non-nil mockBeerListViewable object")
-            return
+        Resolver.reset()
+        let error = NSError(domain: "", code: 200, userInfo: [NSLocalizedDescriptionKey: "Error message"])
+        stub(mockBeerRepository){ (mock) in
+            when(mock.fetchBeerData(any())).then { completion in
+                completion(nil,error)
+                self.globalAsyncExpectation?.fulfill()
+            }
         }
+        setupStubsForBeerListViewable()
+        setupDependencyContainerForBeerListViewableAndBeerDataGetable()
         
-        guard let failedMockRespository  = failedMockRespository else {
-            XCTFail("Expected non-nil failedMockRespository object")
-            return
-        }
-        let mainQueue = DispatchQueue(label: "BeerListViewModelTest-mainQueue")
-        let globalQueue = DispatchQueue(label: "BeerListViewModelTest-globalQueue")
-        let systemTest = BeerListViewModel(beerListView: mockBeerListViewable, repo: failedMockRespository)
+        systemUnderTests.getBeerData()
+        wait(for: [globalAsyncExpectation!, mainAsyncExpectation!], timeout: 20)
         
-        systemTest.getBeerData(onMainQueue: mainQueue, onGlobalQueue: globalQueue)
-        
-        globalQueue.sync {
-        }
-        
-        mainQueue.sync {
-        }
-        
-        failedMockRespository.verifyOnce()
-        mockBeerListViewable.verifyBeerListFailure()
+        verify(mockBeerRepository, times(1)).fetchBeerData(any())
+        verify(mockBeerListView, times(1)).showErrorMessage(errorMessage: equal(to: error.localizedDescription))
+        verify(mockBeerListView, never()).showBeerList(beers: any())
     }
     
-    func testGivenANilViewAndRepoWhenGetBeerDataIsCalledReturnsNothing() {
-        
-        guard let successMockRespository = successMockRespository else {
-            XCTFail("Expected non-nil successMockRespository object")
-            return
+    func setupStubsForBeerListViewable() {
+        stub(mockBeerListView){ (mock) in
+            when(mock.getBeerData()).thenDoNothing()
+            when(mock.showBeerList(beers: any())).then({ _ in
+                self.mainAsyncExpectation?.fulfill()
+            })
+            when(mock.showErrorMessage(errorMessage: any())).then{ _ in
+                self.mainAsyncExpectation?.fulfill()
+            }
         }
-        let mainQueue = DispatchQueue(label: "BeerListViewModelTest-mainQueue")
-        let globalQueue = DispatchQueue(label: "BeerListViewModelTest-globalQueue")
-        let systemTest = BeerListViewModel(beerListView: nil, repo: successMockRespository )
-        
-        systemTest.getBeerData(onMainQueue: mainQueue, onGlobalQueue: globalQueue)
-        
-        globalQueue.sync {
-        }
-        
-        mainQueue.sync {
-        }
-        
-        successMockRespository.verifyNone()
     }
     
-    func testGivenAViewAndNilRepoWhenGetBeerDataisCalledReturnsNothing() {
-        guard let mockBeerListViewable = mockBeerListViewable else {
-            XCTFail("Expected non-nil mockBeerListViewable object")
-            return
-        }
-        
-
-        let mainQueue = DispatchQueue(label: "BeerListViewModelTest-mainQueue")
-        let globalQueue = DispatchQueue(label: "BeerListViewModelTest-globalQueue")
-        let systemTest = BeerListViewModel(beerListView: mockBeerListViewable, repo: nil)
-        systemTest.getBeerData(onMainQueue: mainQueue, onGlobalQueue: globalQueue)
-        
-        globalQueue.sync {
-        }
-        
-        mainQueue.sync {
-        }
-        
-        mockBeerListViewable.verifyNone()
+    func setupDependencyContainerForBeerListViewableAndBeerDataGetable() {
+        let container = DepedencyContainer.instance
+        container.register(dependecy: BeerDataGetable.self, implementation: {
+            return self.mockBeerRepository
+        })
+        container.register(dependecy: BeerListViewable.self, implementation: {
+            return self.mockBeerListView
+        })
     }
-  
 }
+
+
+
+

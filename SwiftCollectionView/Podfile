@@ -8,5 +8,14 @@ target 'SwiftCollectionView' do
   # Pods for SwiftCollectionView
   pod 'Alamofire'
   pod 'AlamofireImage'
+  pod 'Swinject'
 
+
+end
+
+target 'SwiftCollectionViewTests' do
+    pod 'Cuckoo'
+    pod 'Alamofire'
+    pod 'AlamofireImage'
+    pod 'Swinject'
 end

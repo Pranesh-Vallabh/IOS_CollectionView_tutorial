@@ -20,7 +20,6 @@ extension UIImageView: ImageViewDownloadable {
                 self.image = UIImage(named: "beerPlaceHolderImage")
             }
         }
-        
     }
     
     private func fetchImage(with imageUrl: String, _ completion: @escaping (Data?) -> Void) {

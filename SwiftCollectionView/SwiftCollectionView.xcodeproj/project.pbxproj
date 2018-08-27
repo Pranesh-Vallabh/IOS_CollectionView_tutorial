@@ -22,15 +22,25 @@
 		0E2178CE21243A9300680721 /* BeerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178CD21243A9300680721 /* BeerRepository.swift */; };
 		0E2178D42124B17500680721 /* BeerListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D32124B17500680721 /* BeerListViewable.swift */; };
 		0E2178D62124B1BE00680721 /* BeerDataGetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2178D52124B1BE00680721 /* BeerDataGetable.swift */; };
-		0E429593212C144A0081BC41 /* MockRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E429592212C144A0081BC41 /* MockRespository.swift */; };
 		0E429599212D50850081BC41 /* codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E429598212D50850081BC41 /* codecov.yml */; };
+		0E42959F212D7B0F0081BC41 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E42959E212D7B0F0081BC41 /* GeneratedMocks.swift */; };
+		0E4295A3212D871D0081BC41 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4295A2212D871D0081BC41 /* BeerListViewModelTests.swift */; };
+		0E4295AD212EE1740081BC41 /* Registrable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4295AC212EE1740081BC41 /* Registrable.swift */; };
+		0E4295AF212EE2740081BC41 /* Resolvable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4295AE212EE2740081BC41 /* Resolvable.swift */; };
+		0E4295B1212EE3180081BC41 /* DepedencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4295B0212EE3180081BC41 /* DepedencyContainer.swift */; };
+		0E4295B3212EE5A50081BC41 /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4295B2212EE5A50081BC41 /* Resolver.swift */; };
+		0E4295B5212EE7080081BC41 /* BeerRepositoryInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4295B4212EE7080081BC41 /* BeerRepositoryInjectable.swift */; };
 		0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */; };
 		0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434122125A4900055B736 /* ImageViewDownloadable.swift */; };
-		0E4434152126A8E90055B736 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434142126A8E90055B736 /* BeerRepositoryTests.swift */; };
-		0E4434192126A9E20055B736 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434182126A9E20055B736 /* BeerListViewModelTests.swift */; };
-		0E4434202126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E44341F2126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift */; };
-		0E4434222126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434212126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift */; };
-		0E4434262126BEC40055B736 /* MockBeerListViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434252126BEC40055B736 /* MockBeerListViewable.swift */; };
+		0EC7599E212FD8CD00C3A3D9 /* BeerListViewInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC7599D212FD8CD00C3A3D9 /* BeerListViewInjectable.swift */; };
+		0EC759A1213002F000C3A3D9 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC7599F213002E700C3A3D9 /* BeerRepositoryTests.swift */; };
+		0EC759A321300F2200C3A3D9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759A221300F2200C3A3D9 /* Networking.swift */; };
+		0EC759A82132D17D00C3A3D9 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759A72132D17D00C3A3D9 /* Networkable.swift */; };
+		0EC759AC2132D41100C3A3D9 /* NetworkingInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759AB2132D41100C3A3D9 /* NetworkingInjectable.swift */; };
+		0EC759B021333D5C00C3A3D9 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759AF21333D5C00C3A3D9 /* NetworkingTests.swift */; };
+		0EC759B22133F10D00C3A3D9 /* BeerListViewModelInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759B12133F10D00C3A3D9 /* BeerListViewModelInjectable.swift */; };
+		0EC759B42133F18700C3A3D9 /* BeerListViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759B32133F18700C3A3D9 /* BeerListViewModelable.swift */; };
+		9743995E0132368327D56ADA /* libPods-SwiftCollectionViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08C4992F0276216F9EC5962 /* libPods-SwiftCollectionViewTests.a */; };
 		AA9CB37B4EBFDA146173A66E /* Pods_SwiftCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,20 +72,32 @@
 		0E2178CD21243A9300680721 /* BeerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepository.swift; sourceTree = "<group>"; };
 		0E2178D32124B17500680721 /* BeerListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewable.swift; sourceTree = "<group>"; };
 		0E2178D52124B1BE00680721 /* BeerDataGetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDataGetable.swift; sourceTree = "<group>"; };
-		0E429592212C144A0081BC41 /* MockRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRespository.swift; sourceTree = "<group>"; };
 		0E429598212D50850081BC41 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = codecov.yml; sourceTree = "<group>"; };
+		0E42959E212D7B0F0081BC41 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		0E4295A2212D871D0081BC41 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
+		0E4295AC212EE1740081BC41 /* Registrable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registrable.swift; sourceTree = "<group>"; };
+		0E4295AE212EE2740081BC41 /* Resolvable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolvable.swift; sourceTree = "<group>"; };
+		0E4295B0212EE3180081BC41 /* DepedencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepedencyContainer.swift; sourceTree = "<group>"; };
+		0E4295B2212EE5A50081BC41 /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		0E4295B4212EE7080081BC41 /* BeerRepositoryInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepositoryInjectable.swift; sourceTree = "<group>"; };
 		0E4433CE212585DE0055B736 /* SwiftCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewTests.swift; sourceTree = "<group>"; };
 		0E4433D2212585DE0055B736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E4434122125A4900055B736 /* ImageViewDownloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDownloadable.swift; sourceTree = "<group>"; };
-		0E4434142126A8E90055B736 /* BeerRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepositoryTests.swift; sourceTree = "<group>"; };
-		0E4434182126A9E20055B736 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
-		0E44341F2126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMockRespositoryGetBeerData.swift; sourceTree = "<group>"; };
-		0E4434212126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedMockRespositoryGetBeerData.swift; sourceTree = "<group>"; };
-		0E4434252126BEC40055B736 /* MockBeerListViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBeerListViewable.swift; sourceTree = "<group>"; };
+		0EC7599D212FD8CD00C3A3D9 /* BeerListViewInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewInjectable.swift; sourceTree = "<group>"; };
+		0EC7599F213002E700C3A3D9 /* BeerRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BeerRepositoryTests.swift; path = /Users/pranesh/IOS_CollectionView_tutorial/SwiftCollectionView/SwiftCollectionView/Controllers/BeerRepositoryTests.swift; sourceTree = "<absolute>"; };
+		0EC759A221300F2200C3A3D9 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		0EC759A72132D17D00C3A3D9 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		0EC759AB2132D41100C3A3D9 /* NetworkingInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInjectable.swift; sourceTree = "<group>"; };
+		0EC759AF21333D5C00C3A3D9 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		0EC759B12133F10D00C3A3D9 /* BeerListViewModelInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelInjectable.swift; sourceTree = "<group>"; };
+		0EC759B32133F18700C3A3D9 /* BeerListViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelable.swift; sourceTree = "<group>"; };
 		29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		2DEFC6B0226207C2F9FB16AA /* Pods-SwiftCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C08C4992F0276216F9EC5962 /* libPods-SwiftCollectionViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftCollectionViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38C82F933D66F2F3D709655 /* Pods-SwiftCollectionViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionViewTests/Pods-SwiftCollectionViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE665A34CDC9246187E1739B /* Pods-SwiftCollectionViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionViewTests/Pods-SwiftCollectionViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9743995E0132368327D56ADA /* libPods-SwiftCollectionViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +144,8 @@
 		0E21786F211B137300680721 /* SwiftCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0EC759A62130388900C3A3D9 /* Services */,
+				0E4295AB212EE15E0081BC41 /* Dependency */,
 				0E2178D0212453B900680721 /* ViewModel */,
 				0E2178CF212453A000680721 /* Repository */,
 				0E21789C2121A3BD00680721 /* Extensions */,
@@ -152,6 +177,7 @@
 				0E21788C21217B5C00680721 /* BeerDetailViewController.swift */,
 				0E21788A212174CA00680721 /* BeerListViewController.swift */,
 				0E2178D32124B17500680721 /* BeerListViewable.swift */,
+				0EC7599D212FD8CD00C3A3D9 /* BeerListViewInjectable.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -194,6 +220,7 @@
 			children = (
 				0E2178CD21243A9300680721 /* BeerRepository.swift */,
 				0E2178D52124B1BE00680721 /* BeerDataGetable.swift */,
+				0E4295B4212EE7080081BC41 /* BeerRepositoryInjectable.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -202,31 +229,44 @@
 			isa = PBXGroup;
 			children = (
 				0E2178CB21242C0600680721 /* BeerListViewModel.swift */,
+				0EC759B12133F10D00C3A3D9 /* BeerListViewModelInjectable.swift */,
+				0EC759B32133F18700C3A3D9 /* BeerListViewModelable.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E4295AB212EE15E0081BC41 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				0E4295AC212EE1740081BC41 /* Registrable.swift */,
+				0E4295AE212EE2740081BC41 /* Resolvable.swift */,
+				0E4295B0212EE3180081BC41 /* DepedencyContainer.swift */,
+				0E4295B2212EE5A50081BC41 /* Resolver.swift */,
+			);
+			path = Dependency;
 			sourceTree = "<group>";
 		};
 		0E4433CF212585DE0055B736 /* SwiftCollectionViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				0E44341E2126BD890055B736 /* Mocked Classes */,
-				0E4434182126A9E20055B736 /* BeerListViewModelTests.swift */,
-				0E4434142126A8E90055B736 /* BeerRepositoryTests.swift */,
+				0EC7599F213002E700C3A3D9 /* BeerRepositoryTests.swift */,
+				0E4295A2212D871D0081BC41 /* BeerListViewModelTests.swift */,
+				0E42959E212D7B0F0081BC41 /* GeneratedMocks.swift */,
+				0EC759AF21333D5C00C3A3D9 /* NetworkingTests.swift */,
 				0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */,
 				0E4433D2212585DE0055B736 /* Info.plist */,
 			);
 			path = SwiftCollectionViewTests;
 			sourceTree = "<group>";
 		};
-		0E44341E2126BD890055B736 /* Mocked Classes */ = {
+		0EC759A62130388900C3A3D9 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				0E44341F2126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift */,
-				0E4434212126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift */,
-				0E4434252126BEC40055B736 /* MockBeerListViewable.swift */,
-				0E429592212C144A0081BC41 /* MockRespository.swift */,
+				0EC759A221300F2200C3A3D9 /* Networking.swift */,
+				0EC759A72132D17D00C3A3D9 /* Networkable.swift */,
+				0EC759AB2132D41100C3A3D9 /* NetworkingInjectable.swift */,
 			);
-			path = "Mocked Classes";
+			path = Services;
 			sourceTree = "<group>";
 		};
 		7F7A6DCC0A302229CA9D2861 /* Pods */ = {
@@ -234,6 +274,8 @@
 			children = (
 				2DEFC6B0226207C2F9FB16AA /* Pods-SwiftCollectionView.debug.xcconfig */,
 				29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */,
+				FE665A34CDC9246187E1739B /* Pods-SwiftCollectionViewTests.debug.xcconfig */,
+				F38C82F933D66F2F3D709655 /* Pods-SwiftCollectionViewTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -242,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */,
+				C08C4992F0276216F9EC5962 /* libPods-SwiftCollectionViewTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -272,9 +315,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E4433D7212585DE0055B736 /* Build configuration list for PBXNativeTarget "SwiftCollectionViewTests" */;
 			buildPhases = (
+				1E8A2AFA535053FB8FC8986B /* [CP] Check Pods Manifest.lock */,
 				0E4433CA212585DE0055B736 /* Sources */,
 				0E4433CB212585DE0055B736 /* Frameworks */,
 				0E4433CC212585DE0055B736 /* Resources */,
+				0E42959B212D6AB00081BC41 /* Run Cuckoo */,
 			);
 			buildRules = (
 			);
@@ -346,6 +391,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E42959B212D6AB00081BC41 /* Run Cuckoo */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Cuckoo";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/Controllers/BeerListViewable.swift\" \\\n\"$INPUT_DIR/Repository/BeerDataGetable.swift\" \\\n\"$INPUT_DIR/Services/Networkable.swift\" \\\n\"$INPUT_DIR/Services/Networking.swift\"";
+		};
+		1E8A2AFA535053FB8FC8986B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftCollectionViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5A03439E5DCCC371297675C6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,13 +430,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage-framework/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject-framework/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,15 +473,26 @@
 				0E2178CE21243A9300680721 /* BeerRepository.swift in Sources */,
 				0E2178892121562000680721 /* BeerPhotoCell.swift in Sources */,
 				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
+				0E4295B3212EE5A50081BC41 /* Resolver.swift in Sources */,
 				0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */,
 				0E2178D62124B1BE00680721 /* BeerDataGetable.swift in Sources */,
+				0EC759A321300F2200C3A3D9 /* Networking.swift in Sources */,
+				0E4295B5212EE7080081BC41 /* BeerRepositoryInjectable.swift in Sources */,
+				0EC759B42133F18700C3A3D9 /* BeerListViewModelable.swift in Sources */,
 				0E217883211B15B700680721 /* Beer.swift in Sources */,
 				0E2178CC21242C0600680721 /* BeerListViewModel.swift in Sources */,
+				0EC759B22133F10D00C3A3D9 /* BeerListViewModelInjectable.swift in Sources */,
+				0EC759A82132D17D00C3A3D9 /* Networkable.swift in Sources */,
 				0E217871211B137300680721 /* AppDelegate.swift in Sources */,
 				0E21788B212174CA00680721 /* BeerListViewController.swift in Sources */,
+				0E4295B1212EE3180081BC41 /* DepedencyContainer.swift in Sources */,
+				0EC759AC2132D41100C3A3D9 /* NetworkingInjectable.swift in Sources */,
 				0E217885211B17C000680721 /* SampleData.swift in Sources */,
+				0E4295AF212EE2740081BC41 /* Resolvable.swift in Sources */,
 				0E21788F2121963C00680721 /* ImageViewExtension.swift in Sources */,
 				0E2178D42124B17500680721 /* BeerListViewable.swift in Sources */,
+				0EC7599E212FD8CD00C3A3D9 /* BeerListViewInjectable.swift in Sources */,
+				0E4295AD212EE1740081BC41 /* Registrable.swift in Sources */,
 				0E21789121219BBB00680721 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,13 +501,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E4434262126BEC40055B736 /* MockBeerListViewable.swift in Sources */,
 				0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */,
-				0E4434222126BE1B0055B736 /* FailedMockRespositoryGetBeerData.swift in Sources */,
-				0E4434202126BDE30055B736 /* SuccessMockRespositoryGetBeerData.swift in Sources */,
-				0E4434192126A9E20055B736 /* BeerListViewModelTests.swift in Sources */,
-				0E4434152126A8E90055B736 /* BeerRepositoryTests.swift in Sources */,
-				0E429593212C144A0081BC41 /* MockRespository.swift in Sources */,
+				0EC759A1213002F000C3A3D9 /* BeerRepositoryTests.swift in Sources */,
+				0E4295A3212D871D0081BC41 /* BeerListViewModelTests.swift in Sources */,
+				0EC759B021333D5C00C3A3D9 /* NetworkingTests.swift in Sources */,
+				0E42959F212D7B0F0081BC41 /* GeneratedMocks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +691,7 @@
 		};
 		0E4433D5212585DE0055B736 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE665A34CDC9246187E1739B /* Pods-SwiftCollectionViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -622,6 +711,7 @@
 		};
 		0E4433D6212585DE0055B736 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38C82F933D66F2F3D709655 /* Pods-SwiftCollectionViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

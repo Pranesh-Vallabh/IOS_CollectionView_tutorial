@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import Cuckoo
 @testable import SwiftCollectionView
 
 class SwiftCollectionViewTests: XCTestCase {

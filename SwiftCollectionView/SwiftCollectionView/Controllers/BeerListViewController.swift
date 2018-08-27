@@ -8,18 +8,26 @@
 
 import UIKit
 
-class BeerListViewController: UIViewController {
+class BeerListViewController: UIViewController, BeerListViewModelInjectable {
 
     var beers = [Beer]()
-    
-    lazy var beerListViewModel: BeerListViewModel  = {
-        BeerListViewModel(beerListView: self, repo: BeerRepository())
-    }()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let container = DepedencyContainer.instance
+        container.register(dependecy: BeerDataGetable.self, implementation: {
+            BeerRepository()
+        })
+        container.register(dependecy: BeerListViewable.self, implementation: {
+            self
+        })
+        container.register(dependecy: Networkable.self, implementation: {
+            Networking()
+        })
+        
         getBeerData()
     }
 
@@ -43,6 +51,7 @@ class BeerListViewController: UIViewController {
         }
     }
 }
+
 
 extension BeerListViewController: UICollectionViewDataSource {
     
@@ -68,7 +77,7 @@ extension BeerListViewController: UICollectionViewDataSource {
 
 extension BeerListViewController : BeerListViewable {
     func getBeerData() {
-        beerListViewModel.getBeerData()
+        self.beerListViewModel.getBeerData()
     }
     
     func showErrorMessage(errorMessage: String) {

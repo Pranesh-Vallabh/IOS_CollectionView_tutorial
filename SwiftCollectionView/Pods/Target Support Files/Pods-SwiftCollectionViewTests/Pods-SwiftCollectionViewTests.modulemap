@@ -1,0 +1,6 @@
+module Pods_SwiftCollectionViewTests {
+  umbrella header "Pods-SwiftCollectionViewTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
