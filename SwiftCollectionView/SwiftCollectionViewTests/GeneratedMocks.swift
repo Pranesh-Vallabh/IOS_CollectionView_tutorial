@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: SwiftCollectionView/Controllers/BeerListViewable.swift at 2018-08-27 08:57:54 +0000
+// MARK: - Mocks generated from file: SwiftCollectionView/Controllers/BeerListViewable.swift at 2018-08-27 09:09:42 +0000
 
 //
 //  BeerListViewProtocol.swift
@@ -141,7 +141,7 @@ class MockBeerListViewable: BeerListViewable, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: SwiftCollectionView/Repository/BeerDataGetable.swift at 2018-08-27 08:57:54 +0000
+// MARK: - Mocks generated from file: SwiftCollectionView/Repository/BeerDataGetable.swift at 2018-08-27 09:09:42 +0000
 
 //
 //  BeerRepositoryProtocol.swift
@@ -230,7 +230,7 @@ class MockBeerDataGetable: BeerDataGetable, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: SwiftCollectionView/Services/Networkable.swift at 2018-08-27 08:57:54 +0000
+// MARK: - Mocks generated from file: SwiftCollectionView/Services/Networkable.swift at 2018-08-27 09:09:42 +0000
 
 //
 //  Networkable.swift
@@ -322,7 +322,7 @@ class MockNetworkable: Networkable, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: SwiftCollectionView/Services/Networking.swift at 2018-08-27 08:57:54 +0000
+// MARK: - Mocks generated from file: SwiftCollectionView/Services/Networking.swift at 2018-08-27 09:09:42 +0000
 
 //
 //  Networking.swift
