@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.623446"
+            timestampString = "557309152.332275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
             landmarkType = "7">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionView/ViewModel/BeerListViewModel.swift"
-            timestampString = "557053786.623852"
+            timestampString = "557309152.332831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
             landmarkName = "getBeerData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,11 +122,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionView/ViewModel/BeerListViewModel.swift"
-            timestampString = "557053786.62396"
+            timestampString = "557309152.332937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
             landmarkName = "getBeerData()"
             landmarkType = "7">
             <Locations>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionView/ViewModel/BeerListViewModel.swift"
-            timestampString = "557053786.6242189"
+            timestampString = "557309152.333006"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "getBeerData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,23 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.6243401"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.624473"
+            timestampString = "557309152.33306"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -218,11 +202,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.624561"
+            timestampString = "557309152.333364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
+            timestampString = "557309152.333629"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
             landmarkType = "7">
             <Locations>
@@ -266,11 +266,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.624639"
+            timestampString = "557309152.333822"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
             landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.624859"
+            timestampString = "557309152.3340141"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
             landmarkType = "7">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.625051"
+            timestampString = "557309152.334273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
             landmarkType = "7">
          </BreakpointContent>
@@ -314,23 +314,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.625195"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
-            timestampString = "557053786.625308"
+            timestampString = "557309152.334515"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -345,12 +329,28 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftCollectionView/ViewModel/BeerListViewModel.swift"
-            timestampString = "557053786.625429"
+            filePath = "SwiftCollectionViewTests/BeerListViewModelTests.swift"
+            timestampString = "557309152.334807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCollectionView/ViewModel/BeerListViewModel.swift"
+            timestampString = "557309152.33505"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "getBeerData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -362,11 +362,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionView/Controllers/BeerListViewController.swift"
-            timestampString = "557053786.625506"
+            timestampString = "557309152.335103"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "getBeerData()"
             landmarkType = "7">
          </BreakpointContent>

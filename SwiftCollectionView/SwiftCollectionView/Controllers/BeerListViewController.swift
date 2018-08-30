@@ -8,26 +8,19 @@
 
 import UIKit
 
-class BeerListViewController: UIViewController, BeerListViewModelInjectable {
+class BeerListViewController: UIViewController {
 
     var beers = [Beer]()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    lazy var beerListViewModel: BeerListViewModelable = {
+        BeerListViewModel(beerListView: self)
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let container = DepedencyContainer.instance
-        container.register(dependecy: BeerDataGetable.self, implementation: {
-            BeerRepository()
-        })
-        container.register(dependecy: BeerListViewable.self, implementation: {
-            self
-        })
-        container.register(dependecy: Networkable.self, implementation: {
-            Networking()
-        })
-        
         getBeerData()
     }
 

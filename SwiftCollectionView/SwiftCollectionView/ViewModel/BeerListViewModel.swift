@@ -7,18 +7,29 @@
 //
 import UIKit
 
-class BeerListViewModel: BeerListViewModelable, BeerRepositoryInjectable, BeerListViewInjectable {
+class BeerListViewModel: BeerListViewModelable, BeerRepositoryInjectable {
+    
+    private weak var beerListView: BeerListViewable?
+    
+    init(beerListView: BeerListViewable?) {
+        self.beerListView = beerListView
+    }
     
     func getBeerData() {
+        
+        guard let beerListView = beerListView else {
+            return
+        }
+        
         DispatchQueue.global().async {
             
             self.beerRepository.fetchBeerData { (retrivedBeers, error) -> Void in
                 
                 DispatchQueue.main.async {
                     if let error = error {
-                        self.beerListView.showErrorMessage(errorMessage: error.localizedDescription)
+                        beerListView.showErrorMessage(errorMessage: error.localizedDescription)
                     } else if let retrivedBeers = retrivedBeers {
-                        self.beerListView.showBeerList(beers: retrivedBeers)
+                        beerListView.showBeerList(beers: retrivedBeers)
                     }
                 }
             }

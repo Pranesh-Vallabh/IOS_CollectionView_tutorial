@@ -32,12 +32,10 @@
 		0E4295B5212EE7080081BC41 /* BeerRepositoryInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4295B4212EE7080081BC41 /* BeerRepositoryInjectable.swift */; };
 		0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */; };
 		0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434122125A4900055B736 /* ImageViewDownloadable.swift */; };
-		0EC7599E212FD8CD00C3A3D9 /* BeerListViewInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC7599D212FD8CD00C3A3D9 /* BeerListViewInjectable.swift */; };
 		0EC759A321300F2200C3A3D9 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759A221300F2200C3A3D9 /* Networking.swift */; };
 		0EC759A82132D17D00C3A3D9 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759A72132D17D00C3A3D9 /* Networkable.swift */; };
 		0EC759AC2132D41100C3A3D9 /* NetworkingInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759AB2132D41100C3A3D9 /* NetworkingInjectable.swift */; };
 		0EC759B021333D5C00C3A3D9 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759AF21333D5C00C3A3D9 /* NetworkingTests.swift */; };
-		0EC759B22133F10D00C3A3D9 /* BeerListViewModelInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759B12133F10D00C3A3D9 /* BeerListViewModelInjectable.swift */; };
 		0EC759B42133F18700C3A3D9 /* BeerListViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759B32133F18700C3A3D9 /* BeerListViewModelable.swift */; };
 		0EC759B62133F74900C3A3D9 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC759B52133F74900C3A3D9 /* BeerRepositoryTests.swift */; };
 		9743995E0132368327D56ADA /* libPods-SwiftCollectionViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08C4992F0276216F9EC5962 /* libPods-SwiftCollectionViewTests.a */; };
@@ -84,12 +82,10 @@
 		0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewTests.swift; sourceTree = "<group>"; };
 		0E4433D2212585DE0055B736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E4434122125A4900055B736 /* ImageViewDownloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDownloadable.swift; sourceTree = "<group>"; };
-		0EC7599D212FD8CD00C3A3D9 /* BeerListViewInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewInjectable.swift; sourceTree = "<group>"; };
 		0EC759A221300F2200C3A3D9 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		0EC759A72132D17D00C3A3D9 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
 		0EC759AB2132D41100C3A3D9 /* NetworkingInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInjectable.swift; sourceTree = "<group>"; };
 		0EC759AF21333D5C00C3A3D9 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
-		0EC759B12133F10D00C3A3D9 /* BeerListViewModelInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelInjectable.swift; sourceTree = "<group>"; };
 		0EC759B32133F18700C3A3D9 /* BeerListViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModelable.swift; sourceTree = "<group>"; };
 		0EC759B52133F74900C3A3D9 /* BeerRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRepositoryTests.swift; sourceTree = "<group>"; };
 		29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +173,6 @@
 				0E21788C21217B5C00680721 /* BeerDetailViewController.swift */,
 				0E21788A212174CA00680721 /* BeerListViewController.swift */,
 				0E2178D32124B17500680721 /* BeerListViewable.swift */,
-				0EC7599D212FD8CD00C3A3D9 /* BeerListViewInjectable.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -229,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				0E2178CB21242C0600680721 /* BeerListViewModel.swift */,
-				0EC759B12133F10D00C3A3D9 /* BeerListViewModelInjectable.swift */,
 				0EC759B32133F18700C3A3D9 /* BeerListViewModelable.swift */,
 			);
 			path = ViewModel;
@@ -481,7 +475,6 @@
 				0EC759B42133F18700C3A3D9 /* BeerListViewModelable.swift in Sources */,
 				0E217883211B15B700680721 /* Beer.swift in Sources */,
 				0E2178CC21242C0600680721 /* BeerListViewModel.swift in Sources */,
-				0EC759B22133F10D00C3A3D9 /* BeerListViewModelInjectable.swift in Sources */,
 				0EC759A82132D17D00C3A3D9 /* Networkable.swift in Sources */,
 				0E217871211B137300680721 /* AppDelegate.swift in Sources */,
 				0E21788B212174CA00680721 /* BeerListViewController.swift in Sources */,
@@ -491,7 +484,6 @@
 				0E4295AF212EE2740081BC41 /* Resolvable.swift in Sources */,
 				0E21788F2121963C00680721 /* ImageViewExtension.swift in Sources */,
 				0E2178D42124B17500680721 /* BeerListViewable.swift in Sources */,
-				0EC7599E212FD8CD00C3A3D9 /* BeerListViewInjectable.swift in Sources */,
 				0E4295AD212EE1740081BC41 /* Registrable.swift in Sources */,
 				0E21789121219BBB00680721 /* Constants.swift in Sources */,
 			);

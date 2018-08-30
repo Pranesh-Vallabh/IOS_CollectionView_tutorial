@@ -15,7 +15,9 @@ class BeerListViewModelTests: XCTestCase {
   
     let mockBeerListView: MockBeerListViewable = MockBeerListViewable()
     let mockBeerRepository: MockBeerDataGetable = MockBeerDataGetable()
-    let systemUnderTests = BeerListViewModel()
+    lazy var systemUnderTests = {
+        BeerListViewModel(beerListView: mockBeerListView)
+    }()
 
     var globalAsyncExpectation: XCTestExpectation?
     var mainAsyncExpectation: XCTestExpectation?
@@ -41,7 +43,7 @@ class BeerListViewModelTests: XCTestCase {
             }
         }
         setupStubsForBeerListViewable()
-        setupDependencyContainerForBeerListViewableAndBeerDataGetable()
+        setupDependencyContainerForBeerDataGetable()
         
         systemUnderTests.getBeerData()
         wait(for: [globalAsyncExpectation!, mainAsyncExpectation!], timeout: 20)
@@ -61,7 +63,7 @@ class BeerListViewModelTests: XCTestCase {
             }
         }
         setupStubsForBeerListViewable()
-        setupDependencyContainerForBeerListViewableAndBeerDataGetable()
+        setupDependencyContainerForBeerDataGetable()
         
         systemUnderTests.getBeerData()
         wait(for: [globalAsyncExpectation!, mainAsyncExpectation!], timeout: 20)
@@ -83,13 +85,10 @@ class BeerListViewModelTests: XCTestCase {
         }
     }
     
-    func setupDependencyContainerForBeerListViewableAndBeerDataGetable() {
+    func setupDependencyContainerForBeerDataGetable() {
         let container = DepedencyContainer.instance
         container.register(dependecy: BeerDataGetable.self, implementation: {
             return self.mockBeerRepository
-        })
-        container.register(dependecy: BeerListViewable.self, implementation: {
-            return self.mockBeerListView
         })
     }
 }
