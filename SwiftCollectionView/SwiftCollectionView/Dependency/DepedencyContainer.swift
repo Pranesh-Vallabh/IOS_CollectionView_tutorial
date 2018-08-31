@@ -21,9 +21,7 @@ extension DepedencyContainer : Registrable {
         container.register(dependecy, factory: { _ in implementation() }).inObjectScope(objectScope)
     }
     
-    func register<T>(dependecy: T.Type, implementation: @escaping () -> T, initImplementation: @escaping (AnyObject, T) -> (), objectScope: ObjectScope = .graph) {
-        container.register(dependecy, factory: { _ in implementation() }).inObjectScope(objectScope).initCompleted{resolver, classType  in initImplementation(resolver as AnyObject, classType)}
-    }
+
 }
 
 extension DepedencyContainer : Resolvable {

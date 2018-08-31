@@ -21,9 +21,14 @@ class BeerListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAccessibility()
         getBeerData()
     }
 
+    func setupAccessibility() {
+        collectionView.accessibilityLabel = AccessibilityLabel.beerListCollectionView
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == Constants.PunkDetailSegueIdentifier {

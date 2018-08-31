@@ -30,5 +30,14 @@ class BeerDetailViewController: UIViewController {
         beerImage.loadImageFromUrl(with: beerSelected.imageUrl)
         descriptionLabel.text = beerSelected.description
         tagLineLabel.text = beerSelected.tagline
+        setupAccessibility()
+    }
+    
+    private func setupAccessibility() {
+        nameLabel.accessibilityIdentifier = AccessibilityIdentifier.Name.rawValue
+        beerImage.accessibilityIdentifier = AccessibilityIdentifier.Image.rawValue
+        beerImage.accessibilityLabel = AccessibilityLabel.beerImageView
+        descriptionLabel.accessibilityIdentifier = AccessibilityIdentifier.Description.rawValue
+        tagLineLabel.accessibilityIdentifier = AccessibilityIdentifier.TagLine.rawValue
     }
 }

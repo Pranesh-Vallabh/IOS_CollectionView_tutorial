@@ -39,6 +39,16 @@
                ReferencedContainer = "container:SwiftCollectionView.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0E15D0732139395E0076B893"
+               BuildableName = "SwiftCollectionViewUITests.xctest"
+               BlueprintName = "SwiftCollectionViewUITests"
+               ReferencedContainer = "container:SwiftCollectionView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

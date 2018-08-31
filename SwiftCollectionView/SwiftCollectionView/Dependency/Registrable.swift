@@ -11,5 +11,4 @@ import Swinject
 
 public protocol Registrable {
     func register<T>(dependecy: T.Type, implementation: @escaping () -> T, objectScope: ObjectScope)
-    func register<T>(dependecy: T.Type, implementation: @escaping () -> T, initImplementation: @escaping (AnyObject, T) -> (), objectScope: ObjectScope)
 }

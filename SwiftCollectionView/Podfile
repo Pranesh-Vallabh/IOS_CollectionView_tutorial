@@ -19,3 +19,10 @@ target 'SwiftCollectionViewTests' do
     pod 'AlamofireImage'
     pod 'Swinject'
 end
+
+target 'SwiftCollectionViewUITests' do
+    pod 'Cuckoo'
+    pod 'Alamofire'
+    pod 'AlamofireImage'
+    pod 'Swinject'
+end
