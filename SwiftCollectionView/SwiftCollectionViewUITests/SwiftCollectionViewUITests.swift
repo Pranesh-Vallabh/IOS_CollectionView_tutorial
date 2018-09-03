@@ -11,27 +11,17 @@ import Alamofire
 import Cuckoo
 
 class SwiftCollectionViewUITests: XCTestCase {
-    var app: XCUIApplication?
-    let dynamicStubs = HTTPDynamicStubs()
+    
     override func setUp() {
         super.setUp()
-        dynamicStubs.setUp()
-        app = XCUIApplication()
-        continueAfterFailure = false
-        app?.launchArguments = [ LaunchEnvironmentKey.IsUITesting.rawValue ]
-        
-        app?.launchEnvironment =  [LaunchEnvironmentKey.IsMockUrl.rawValue: "MockURL"]
-        app?.launch()
     }
     
     override func tearDown() {
-        app = nil
-        dynamicStubs.tearDown()
         super.tearDown()
     }
-    
+    /*
     func testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails() {
-        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl())
+        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/successBeers"))
         let app = XCUIApplication()
         
         let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
@@ -48,7 +38,7 @@ class SwiftCollectionViewUITests: XCTestCase {
     }
     
     func testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears() {
-        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl())
+        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/successBeers"))
         let app = XCUIApplication()
         XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
         
@@ -65,8 +55,8 @@ class SwiftCollectionViewUITests: XCTestCase {
     }
  
     func testGivenAErrorJsonObjectWhenBeerListScreenLoadsThenNoCollectionViewCellsShouldBeDisplayed() {
-        dynamicStubs.setupStub(url: "api/feed", filename: "errorJSONFormat", method: .GET)
-        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl())
+        //dynamicStubs.setupStub(url: "api/feed", filename: "errorJSONFormat", method: .GET)
+        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/errorBeers"))
         let app = XCUIApplication()
 
         let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
@@ -74,8 +64,10 @@ class SwiftCollectionViewUITests: XCTestCase {
         XCTAssertEqual(beerListCollectionView.cells.count, 0)
     }
     
-    func setupLaunchEnvironmentIsMockUrl() -> [String:String] {
-        return [LaunchEnvironmentKey.IsMockUrl.rawValue: "MockURL"]
+    func setupLaunchEnvironmentIsMockUrl(with url: String) -> [String:String] {
+        return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:1236" + url]
     }
+    
+    */
     
 }

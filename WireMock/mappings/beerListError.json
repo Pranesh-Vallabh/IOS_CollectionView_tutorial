@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/errorBeers"
+    },
+    "response": {
+        "status": 200,
+      	"bodyFileName": "errorBeerResponse.json"
+    }
+}

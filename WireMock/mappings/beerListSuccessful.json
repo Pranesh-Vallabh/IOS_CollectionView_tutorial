@@ -1,0 +1,10 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/successBeers"
+    },
+    "response": {
+        "status": 200,
+      	"bodyFileName": "successfulBeerResponse.json"
+    }
+}
