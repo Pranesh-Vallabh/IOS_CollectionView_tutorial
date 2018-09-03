@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewUITests/SwiftCollectionViewUITests.swift"
-            timestampString = "557671988.730577"
+            timestampString = "557673527.9486589"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,12 +442,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewUITests/SwiftCollectionViewUITests.swift"
-            timestampString = "557671988.731598"
+            timestampString = "557673527.949263"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails()"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -682,12 +682,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewUITests/SwiftCollectionViewUITests.swift"
-            timestampString = "557671988.73491"
+            timestampString = "557673527.949718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "testGivenAErrorJsonObjectWhenBeerListScreenLoadsThenNoCollectionViewCellsShouldBeDisplayed()"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "setupLaunchEnvironmentIsMockUrl(with:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

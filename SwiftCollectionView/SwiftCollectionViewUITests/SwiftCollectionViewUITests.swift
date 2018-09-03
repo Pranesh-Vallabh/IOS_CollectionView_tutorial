@@ -12,15 +12,20 @@ import Cuckoo
 
 class SwiftCollectionViewUITests: XCTestCase {
     
+    let dynamicStubs = HTTPDynamicStubs()
     override func setUp() {
         super.setUp()
+        
+        dynamicStubs.setUp()
     }
     
     override func tearDown() {
+        dynamicStubs.tearDown()
         super.tearDown()
     }
-    /*
+    
     func testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails() {
+        dynamicStubs.setupStub(url: "api/feed", filename: "successfulJSON", method: .GET)
         launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/successBeers"))
         let app = XCUIApplication()
         
@@ -38,6 +43,8 @@ class SwiftCollectionViewUITests: XCTestCase {
     }
     
     func testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears() {
+        dynamicStubs.setupStub(url: "api/feed", filename: "successfulJSON", method: .GET)
+
         launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/successBeers"))
         let app = XCUIApplication()
         XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
@@ -55,7 +62,7 @@ class SwiftCollectionViewUITests: XCTestCase {
     }
  
     func testGivenAErrorJsonObjectWhenBeerListScreenLoadsThenNoCollectionViewCellsShouldBeDisplayed() {
-        //dynamicStubs.setupStub(url: "api/feed", filename: "errorJSONFormat", method: .GET)
+        dynamicStubs.setupStub(url: "api/feed", filename: "errorJSONFormat", method: .GET)
         launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/errorBeers"))
         let app = XCUIApplication()
 
@@ -65,9 +72,10 @@ class SwiftCollectionViewUITests: XCTestCase {
     }
     
     func setupLaunchEnvironmentIsMockUrl(with url: String) -> [String:String] {
-        return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:1236" + url]
+        return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:8080/api/feed"]
+        //return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:1236" + url]
     }
     
-    */
+ 
     
 }
