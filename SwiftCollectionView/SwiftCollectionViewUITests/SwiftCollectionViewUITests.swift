@@ -12,25 +12,28 @@ import Cuckoo
 
 class SwiftCollectionViewUITests: XCTestCase {
     var app: XCUIApplication?
-    
+    let dynamicStubs = HTTPDynamicStubs()
     override func setUp() {
         super.setUp()
-        
+        dynamicStubs.setUp()
         app = XCUIApplication()
         continueAfterFailure = false
+        app?.launchArguments = [ LaunchEnvironmentKey.IsUITesting.rawValue ]
+        
+        app?.launchEnvironment =  [LaunchEnvironmentKey.IsMockUrl.rawValue: "MockURL"]
         app?.launch()
     }
     
     override func tearDown() {
         app = nil
+        dynamicStubs.tearDown()
         super.tearDown()
     }
     
     func testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails() {
-        guard let app = app else {
-            XCTFail("Expected a non-nil app")
-            return
-        }
+        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl())
+        let app = XCUIApplication()
+        
         let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
         XCTAssertNotNil(beerListCollectionView)
         
@@ -45,10 +48,8 @@ class SwiftCollectionViewUITests: XCTestCase {
     }
     
     func testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears() {
-        guard let app = app else {
-            XCTFail("Expected a non-nil app")
-            return
-        }
+        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl())
+        let app = XCUIApplication()
         XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
         
         let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
@@ -62,4 +63,19 @@ class SwiftCollectionViewUITests: XCTestCase {
         
         XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
     }
+ 
+    func testGivenAErrorJsonObjectWhenBeerListScreenLoadsThenNoCollectionViewCellsShouldBeDisplayed() {
+        dynamicStubs.setupStub(url: "api/feed", filename: "errorJSONFormat", method: .GET)
+        launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl())
+        let app = XCUIApplication()
+
+        let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
+        XCTAssertNotNil(beerListCollectionView)
+        XCTAssertEqual(beerListCollectionView.cells.count, 0)
+    }
+    
+    func setupLaunchEnvironmentIsMockUrl() -> [String:String] {
+        return [LaunchEnvironmentKey.IsMockUrl.rawValue: "MockURL"]
+    }
+    
 }

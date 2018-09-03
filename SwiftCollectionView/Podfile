@@ -25,4 +25,5 @@ target 'SwiftCollectionViewUITests' do
     pod 'Alamofire'
     pod 'AlamofireImage'
     pod 'Swinject'
+    pod 'Swifter'
 end
