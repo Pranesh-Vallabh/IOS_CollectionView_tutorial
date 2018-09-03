@@ -156,7 +156,7 @@ class BeerRepositoryTests: XCTestCase {
     }
     
     func setupMockHttpUrlResponseForPunkApi() -> HTTPURLResponse? {
-        guard let url = URL(string: Constants.ApiUrl) else {
+        guard let url = URL(string: Constants.getApiUrl()) else {
             XCTFail("Cannot convert Constants.ApiUrl string to URL")
             return nil
         }
