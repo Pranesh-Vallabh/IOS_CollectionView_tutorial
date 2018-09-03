@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List of Beers-->
+        <!--Beer List View Controller-->
         <scene sceneID="hNf-dy-3HL">
             <objects>
                 <viewController id="j81-hI-QTa" customClass="BeerListViewController" customModule="SwiftCollectionView" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +78,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xSq-h9-KMn"/>
                     </view>
-                    <navigationItem key="navigationItem" title="List of Beers" id="WYc-WM-FCI"/>
+                    <navigationItem key="navigationItem" id="WYc-WM-FCI"/>
                     <connections>
                         <outlet property="collectionView" destination="02G-92-RzE" id="aet-eS-sV2"/>
                     </connections>
@@ -99,13 +99,13 @@
                                 <rect key="frame" x="0.0" y="72" width="375" height="587"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1B-CG-FDD">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="305"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="25.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="TEX-UZ-E85">
-                                        <rect key="frame" x="0.0" y="305" width="375" height="200"/>
+                                        <rect key="frame" x="0.0" y="25.5" width="375" height="479.5"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nSC-1S-Nqv">
                                         <rect key="frame" x="0.0" y="505" width="375" height="82"/>

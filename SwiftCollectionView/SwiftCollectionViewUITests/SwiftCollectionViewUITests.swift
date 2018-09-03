@@ -11,23 +11,26 @@ import Alamofire
 import Cuckoo
 
 class SwiftCollectionViewUITests: XCTestCase {
+    var app: XCUIApplication?
     
     override func setUp() {
         super.setUp()
         
-        let app = XCUIApplication()
+        app = XCUIApplication()
         continueAfterFailure = false
-        app.launch()
+        app?.launch()
     }
     
     override func tearDown() {
-
+        app = nil
         super.tearDown()
     }
     
     func testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails() {
-        let app = XCUIApplication()
-        
+        guard let app = app else {
+            XCTFail("Expected a non-nil app")
+            return
+        }
         let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
         XCTAssertNotNil(beerListCollectionView)
         
@@ -40,5 +43,23 @@ class SwiftCollectionViewUITests: XCTestCase {
         XCTAssertEqual(app.staticTexts[AccessibilityIdentifier.TagLine.rawValue].label,"A Real Bitter Experience.")
         XCTAssert(app.images[AccessibilityLabel.beerImageView].exists)
     }
-
+    
+    func testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears() {
+        guard let app = app else {
+            XCTFail("Expected a non-nil app")
+            return
+        }
+        XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
+        
+        let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
+        XCTAssertNotNil(beerListCollectionView)
+        let firstCellFromBeerListCollectionView = beerListCollectionView.cells.element(boundBy: 0)
+        XCTAssertNotNil(firstCellFromBeerListCollectionView)
+        firstCellFromBeerListCollectionView.tap()
+        
+        XCTAssertEqual(app.staticTexts[AccessibilityIdentifier.Name.rawValue].label, "Buzz")
+        app.navigationBars["SwiftCollectionView.BeerDetailView"].buttons["List of Beers"].tap()
+        
+        XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
+    }
 }

@@ -21,12 +21,13 @@ class BeerListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAccessibility()
+        setupAccessibilityAndLocalization()
         getBeerData()
     }
 
-    func setupAccessibility() {
+    func setupAccessibilityAndLocalization() {
         collectionView.accessibilityLabel = AccessibilityLabel.beerListCollectionView
+        self.navigationItem.title = LocalizedString.listTitle
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
