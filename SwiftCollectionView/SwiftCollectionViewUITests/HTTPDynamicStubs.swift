@@ -11,28 +11,29 @@ import Foundation
 import Foundation
 import Swifter
 
+struct HTTPStubInfo {
+    let url: String
+    let jsonFilename: String
+    let method: HTTPMethod
+}
+
 enum HTTPMethod {
     case POST
     case GET
 }
 
 class HTTPDynamicStubs {
-    
     var server = HttpServer()
-    
-    func setUp() {
-        setupInitialStubs()
-        try! server.start()
-    }
     
     func tearDown() {
         server.stop()
     }
     
-    func setupInitialStubs() {
-        // Setting up all the initial mocks from the array
-        for stub in initialStubs {
-            setupStub(url: stub.url, filename: stub.jsonFilename, method: stub.method)
+    func startServer() {
+        do {
+            try server.start()
+        } catch let error {
+            print("Server Error: \(error.localizedDescription)")
         }
     }
     
@@ -40,11 +41,16 @@ class HTTPDynamicStubs {
         let testBundle = Bundle(for: type(of: self))
         let filePath = testBundle.path(forResource: filename, ofType: "json")
         let fileUrl = URL(fileURLWithPath: filePath!)
-        let data = try! Data(contentsOf: fileUrl, options: .uncached)
-        // Looking for a file and converting it to JSON
+        var data: Data
+        do{
+            data = try Data(contentsOf: fileUrl, options: .uncached)
+        } catch let error {
+            print("Data Error: \(error.localizedDescription)")
+            return
+        }
+        
         let json = dataToJSON(data: data)
         
-        // Swifter makes it very easy to create stubbed responses
         let response: ((HttpRequest) -> HttpResponse) = { _ in
             return HttpResponse.ok(.json(json as AnyObject))
         }
@@ -64,13 +70,3 @@ class HTTPDynamicStubs {
         return nil
     }
 }
-
-struct HTTPStubInfo {
-    let url: String
-    let jsonFilename: String
-    let method: HTTPMethod
-}
-
-let initialStubs = [
-    HTTPStubInfo(url: "/api/feed", jsonFilename: "successfulJSON", method: .GET),
-]

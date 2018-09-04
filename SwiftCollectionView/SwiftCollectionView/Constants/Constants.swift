@@ -9,8 +9,6 @@
 import Foundation
 
 public struct Constants {
-
-    //static let ApiUrl = "http://localhost:8080/api/feed"//"https://api.punkapi.com/v2/beers"
     static let PunkCollectionViewCellIdentifier = "BeerCell"
     static let PunkDetailSegueIdentifier = "showBeerDetails"
     

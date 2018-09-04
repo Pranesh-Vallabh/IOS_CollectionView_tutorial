@@ -16,7 +16,6 @@ class SwiftCollectionViewUITests: XCTestCase {
     override func setUp() {
         super.setUp()
         
-        dynamicStubs.setUp()
     }
     
     override func tearDown() {
@@ -26,6 +25,7 @@ class SwiftCollectionViewUITests: XCTestCase {
     
     func testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails() {
         dynamicStubs.setupStub(url: "api/feed", filename: "successfulJSON", method: .GET)
+        dynamicStubs.startServer()
         launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/successBeers"))
         let app = XCUIApplication()
         
@@ -44,7 +44,7 @@ class SwiftCollectionViewUITests: XCTestCase {
     
     func testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears() {
         dynamicStubs.setupStub(url: "api/feed", filename: "successfulJSON", method: .GET)
-
+        dynamicStubs.startServer()
         launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/successBeers"))
         let app = XCUIApplication()
         XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
@@ -63,6 +63,7 @@ class SwiftCollectionViewUITests: XCTestCase {
  
     func testGivenAErrorJsonObjectWhenBeerListScreenLoadsThenNoCollectionViewCellsShouldBeDisplayed() {
         dynamicStubs.setupStub(url: "api/feed", filename: "errorJSONFormat", method: .GET)
+        dynamicStubs.startServer()
         launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/errorBeers"))
         let app = XCUIApplication()
 
