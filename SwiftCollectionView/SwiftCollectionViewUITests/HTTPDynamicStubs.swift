@@ -7,8 +7,6 @@
 //
 
 import Foundation
-
-import Foundation
 import Swifter
 
 struct HTTPStubInfo {
