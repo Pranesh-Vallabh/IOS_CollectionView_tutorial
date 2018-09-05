@@ -47,8 +47,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "37"
             endingLineNumber = "37"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -191,8 +191,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
             endingLineNumber = "56"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -207,8 +207,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "58"
             endingLineNumber = "58"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -223,8 +223,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "66"
             endingLineNumber = "66"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -271,8 +271,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -287,8 +287,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "71"
             endingLineNumber = "71"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -303,8 +303,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -319,8 +319,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
             endingLineNumber = "49"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -335,8 +335,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
             endingLineNumber = "51"
-            landmarkName = "testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully()"
-            landmarkType = "7">
+            landmarkName = "BeerListViewModelTests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -431,8 +431,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails()"
-            landmarkType = "7">
+            landmarkName = "SwiftCollectionViewUITests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -447,8 +447,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears()"
-            landmarkType = "7">
+            landmarkName = "SwiftCollectionViewUITests"
+            landmarkType = "3">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -623,8 +623,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "setupLaunchEnvironmentIsMockUrl(with:)"
-            landmarkType = "7">
+            landmarkName = "SwiftCollectionViewUITests"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

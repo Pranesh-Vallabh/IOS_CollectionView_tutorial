@@ -1,6 +1,7 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 
+
 target 'SwiftCollectionView' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
@@ -9,7 +10,7 @@ target 'SwiftCollectionView' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'Swinject'
-  pod 'BeerPod', :path => '~/Documents/Libraries/BeerPod'
+  pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'#'~/Documents/Libraries/BeerPod'
 
 end
 
@@ -18,6 +19,7 @@ target 'SwiftCollectionViewTests' do
     pod 'Alamofire'
     pod 'AlamofireImage'
     pod 'Swinject'
+    pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'
 end
 
 target 'SwiftCollectionViewUITests' do

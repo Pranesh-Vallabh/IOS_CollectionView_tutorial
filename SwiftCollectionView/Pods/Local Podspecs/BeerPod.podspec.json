@@ -3,23 +3,23 @@
   "version": "0.0.1",
   "summary": "A short description of BeerPod.",
   "description": "BeerPod uses the Punk Api",
-  "homepage": "http://EXAMPLE/BeerPod",
+  "homepage": "https://github.com/Pranesh-Vallabh/BeerPod",
   "license": "Copyleft",
   "authors": {
-    "Pranesh": "pvallabh@jhb.dvt.co.za"
+    "Pranesh": "phvallabh@gmail.com"
   },
   "platforms": {
     "ios": "9.0"
   },
   "source": {
-    "path": "."
+    "git": "https://github.com/Pranesh-Vallabh/BeerPod.git",
+    "tag": "0.0.1"
   },
   "source_files": "BeerPod/**/*.swift",
   "frameworks": [
     "UIKit",
     "Foundation"
   ],
-  "requires_arc": true,
   "dependencies": {
     "Alamofire": [
 

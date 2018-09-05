@@ -1,5 +1,5 @@
 framework module BeerPod {
-  umbrella header "BeerPod-umbrella.h"
+  umbrella header "BeerPod-framework-umbrella.h"
 
   export *
   module * { export * }
