@@ -11,7 +11,7 @@ import Alamofire
 import Cuckoo
 
 class SwiftCollectionViewUITests: XCTestCase {
-    
+    /*
     let dynamicStubs = HTTPDynamicStubs()
     override func setUp() {
         super.setUp()
@@ -76,7 +76,7 @@ class SwiftCollectionViewUITests: XCTestCase {
         return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:8080/api/feed"]
         //return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:1236" + url]
     }
-    
+    */
  
     
 }

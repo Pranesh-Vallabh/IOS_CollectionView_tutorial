@@ -7,8 +7,9 @@
 //
 
 import UIKit
-
+import BeerPod
 class BeerListViewController: UIViewController {
+    
 
     var beers = [Beer]()
     
@@ -87,5 +88,8 @@ extension BeerListViewController : BeerListViewable {
         self.beers = beers
         self.collectionView.reloadData()
     }
+    
 }
+
+
 

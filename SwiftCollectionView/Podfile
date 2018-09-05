@@ -9,7 +9,7 @@ target 'SwiftCollectionView' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'Swinject'
-
+  pod 'BeerPod', :path => '~/Documents/Libraries/BeerPod'
 
 end
 
@@ -27,3 +27,5 @@ target 'SwiftCollectionViewUITests' do
     pod 'Swinject'
     pod 'Swifter'
 end
+
+

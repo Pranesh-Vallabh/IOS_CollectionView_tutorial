@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import BeerPod
 class BeerPhotoCell: UICollectionViewCell {
     
     @IBOutlet weak var beerImage: UIImageView!
