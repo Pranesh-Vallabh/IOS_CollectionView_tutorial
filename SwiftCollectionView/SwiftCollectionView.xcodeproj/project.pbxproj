@@ -17,8 +17,6 @@
 		0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788C21217B5C00680721 /* BeerDetailViewController.swift */; };
 		0E21788F2121963C00680721 /* ImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E21788E2121963C00680721 /* ImageViewExtension.swift */; };
 		0E2DE103213D2817005AEC4D /* errorJSONFormat.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E2DE102213D2817005AEC4D /* errorJSONFormat.json */; };
-		0E2DE105213D455E005AEC4D /* LaunchEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DE104213D455E005AEC4D /* LaunchEnvironmentKey.swift */; };
-		0E2DE106213D4814005AEC4D /* LaunchEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DE104213D455E005AEC4D /* LaunchEnvironmentKey.swift */; };
 		0E2DE109213D4BFC005AEC4D /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2DE108213D4BFC005AEC4D /* XCTestCaseExtension.swift */; };
 		0E429599212D50850081BC41 /* codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E429598212D50850081BC41 /* codecov.yml */; };
 		0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */; };
@@ -31,6 +29,12 @@
 		0E6FBB12213D1ED3000BCDC7 /* successfulJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E6FBB11213D1ED3000BCDC7 /* successfulJSON.json */; };
 		0E6FBB14213D2032000BCDC7 /* HTTPDynamicStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FBB13213D2032000BCDC7 /* HTTPDynamicStubs.swift */; };
 		0E90B66B213FE5EE00E5DF55 /* BeerPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E90B66A213FE5EE00E5DF55 /* BeerPhotoCell.swift */; };
+		0E90B66F214005AF00E5DF55 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E90B66E214005AF00E5DF55 /* GeneratedMocks.swift */; };
+		0E90B6992140206500E5DF55 /* jjj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E90B6982140206500E5DF55 /* jjj.swift */; };
+		0EF71F1E2142338500730E57 /* BeerPodHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F1D2142338500730E57 /* BeerPodHeader.swift */; };
+		0EF71F2A2142490700730E57 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F272142490700730E57 /* NetworkingTests.swift */; };
+		0EF71F2B2142490700730E57 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F282142490700730E57 /* BeerListViewModelTests.swift */; };
+		0EF71F2C2142490700730E57 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F292142490700730E57 /* BeerRepositoryTests.swift */; };
 		6FCCB4B353B30D33BEC49881 /* libPods-SwiftCollectionViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 421D1A8EF21FA1AC6414FC39 /* libPods-SwiftCollectionViewUITests.a */; };
 		9743995E0132368327D56ADA /* libPods-SwiftCollectionViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08C4992F0276216F9EC5962 /* libPods-SwiftCollectionViewTests.a */; };
 		AA9CB37B4EBFDA146173A66E /* Pods_SwiftCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */; };
@@ -53,6 +57,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0E90B69321400B8200E5DF55 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E15D0742139395E0076B893 /* SwiftCollectionViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCollectionViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E15D0782139395E0076B893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,7 +84,6 @@
 		0E21788C21217B5C00680721 /* BeerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		0E21788E2121963C00680721 /* ImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtension.swift; sourceTree = "<group>"; };
 		0E2DE102213D2817005AEC4D /* errorJSONFormat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = errorJSONFormat.json; sourceTree = "<group>"; };
-		0E2DE104213D455E005AEC4D /* LaunchEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchEnvironmentKey.swift; sourceTree = "<group>"; };
 		0E2DE108213D4BFC005AEC4D /* XCTestCaseExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCaseExtension.swift; sourceTree = "<group>"; };
 		0E429598212D50850081BC41 /* codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = codecov.yml; sourceTree = "<group>"; };
 		0E4433CE212585DE0055B736 /* SwiftCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +97,12 @@
 		0E6FBB13213D2032000BCDC7 /* HTTPDynamicStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDynamicStubs.swift; sourceTree = "<group>"; };
 		0E883FE7213EB34600C113B6 /* BeerPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BeerPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E90B66A213FE5EE00E5DF55 /* BeerPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPhotoCell.swift; sourceTree = "<group>"; };
+		0E90B66E214005AF00E5DF55 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
+		0E90B6982140206500E5DF55 /* jjj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jjj.swift; sourceTree = "<group>"; };
+		0EF71F1D2142338500730E57 /* BeerPodHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPodHeader.swift; sourceTree = "<group>"; };
+		0EF71F272142490700730E57 /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		0EF71F282142490700730E57 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
+		0EF71F292142490700730E57 /* BeerRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerRepositoryTests.swift; sourceTree = "<group>"; };
 		29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		2DEFC6B0226207C2F9FB16AA /* Pods-SwiftCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		421D1A8EF21FA1AC6414FC39 /* libPods-SwiftCollectionViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftCollectionViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +162,6 @@
 				0E15D07F213949FE0076B893 /* AccessibilityIdentifier.swift */,
 				0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */,
 				0E6FBB0E213D0672000BCDC7 /* LocalizedString.swift */,
-				0E2DE104213D455E005AEC4D /* LaunchEnvironmentKey.swift */,
 			);
 			path = AccessibilityDetails;
 			sourceTree = "<group>";
@@ -180,6 +201,7 @@
 				0E217877211B137300680721 /* Assets.xcassets */,
 				0E217879211B137300680721 /* LaunchScreen.storyboard */,
 				0E21787C211B137300680721 /* Info.plist */,
+				0EF71F1D2142338500730E57 /* BeerPodHeader.swift */,
 			);
 			path = SwiftCollectionView;
 			sourceTree = "<group>";
@@ -214,8 +236,13 @@
 		0E4433CF212585DE0055B736 /* SwiftCollectionViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				0EF71F282142490700730E57 /* BeerListViewModelTests.swift */,
+				0EF71F292142490700730E57 /* BeerRepositoryTests.swift */,
+				0EF71F272142490700730E57 /* NetworkingTests.swift */,
+				0E90B66E214005AF00E5DF55 /* GeneratedMocks.swift */,
 				0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */,
 				0E4433D2212585DE0055B736 /* Info.plist */,
+				0E90B6982140206500E5DF55 /* jjj.swift */,
 			);
 			path = SwiftCollectionViewTests;
 			sourceTree = "<group>";
@@ -290,6 +317,7 @@
 				0E21786A211B137300680721 /* Frameworks */,
 				0E21786B211B137300680721 /* Resources */,
 				5A03439E5DCCC371297675C6 /* [CP] Embed Pods Frameworks */,
+				0E90B69321400B8200E5DF55 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,7 +434,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/Pods/BeerPod/BeerPod\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$INPUT_DIR/Controllers/BeerListViewable.swift\" ";
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\n\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/Pods/BeerPod/BeerPod\"\nBEER_INPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$BEER_INPUT_DIR/BeerPodHeader.swift\" \\\n\"$INPUT_DIR/Controllers/BeerListViewable.swift\" \\\n\"$INPUT_DIR/Repository/BeerDataGetable.swift\" \\\n\"$INPUT_DIR/Services/Networkable.swift\" \\\n\"$INPUT_DIR/Services/Networking.swift\"";
 		};
 		1E8A2AFA535053FB8FC8986B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -494,7 +522,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2DE109213D4BFC005AEC4D /* XCTestCaseExtension.swift in Sources */,
-				0E2DE106213D4814005AEC4D /* LaunchEnvironmentKey.swift in Sources */,
 				0E6FBB10213D0787000BCDC7 /* LocalizedString.swift in Sources */,
 				0E59254B2139685F0037F2CC /* SwiftCollectionViewUITests.swift in Sources */,
 				0E15D08121394DB60076B893 /* AccessibilityIdentifier.swift in Sources */,
@@ -510,7 +537,7 @@
 				0E6FBB0F213D0672000BCDC7 /* LocalizedString.swift in Sources */,
 				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
 				0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */,
-				0E2DE105213D455E005AEC4D /* LaunchEnvironmentKey.swift in Sources */,
+				0EF71F1E2142338500730E57 /* BeerPodHeader.swift in Sources */,
 				0E59254D213969DB0037F2CC /* AccessibilityLabel.swift in Sources */,
 				0E217871211B137300680721 /* AppDelegate.swift in Sources */,
 				0E90B66B213FE5EE00E5DF55 /* BeerPhotoCell.swift in Sources */,
@@ -524,7 +551,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E90B6992140206500E5DF55 /* jjj.swift in Sources */,
 				0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */,
+				0EF71F2B2142490700730E57 /* BeerListViewModelTests.swift in Sources */,
+				0E90B66F214005AF00E5DF55 /* GeneratedMocks.swift in Sources */,
+				0EF71F2A2142490700730E57 /* NetworkingTests.swift in Sources */,
+				0EF71F2C2142490700730E57 /* BeerRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

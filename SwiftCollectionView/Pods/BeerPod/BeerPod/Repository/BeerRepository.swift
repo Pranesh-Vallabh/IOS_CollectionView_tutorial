@@ -9,6 +9,10 @@ import Alamofire
 
 public struct BeerRepository: NetworkingInjectable, BeerDataGetable {
     
+    public init() {
+        
+    }
+    
     public func fetchBeerData(_ completion: @escaping ([Beer]?, Error?) -> Void) {
         var beers = [Beer]()
         

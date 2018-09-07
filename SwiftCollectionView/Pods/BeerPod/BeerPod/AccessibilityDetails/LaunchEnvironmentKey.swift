@@ -8,15 +8,15 @@
 
 import Foundation
 
-enum LaunchEnvironmentKey: String {
+public enum LaunchEnvironmentKey: String {
     case IsUITesting = "IS_UI_TESTING",
     IsMockUrl = "Mock"
     
-    func isInLaunchArguments() -> Bool {
+    public func isInLaunchArguments() -> Bool {
         return ProcessInfo.processInfo.arguments.contains(rawValue)
     }
     
-    func processInfoValue() -> String? {
+    public func processInfoValue() -> String? {
         return ProcessInfo.processInfo.environment[rawValue]
     }
 }

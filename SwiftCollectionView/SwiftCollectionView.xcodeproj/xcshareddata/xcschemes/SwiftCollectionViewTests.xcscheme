@@ -33,6 +33,16 @@
                ReferencedContainer = "container:SwiftCollectionView.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0E90B67E21400B8200E5DF55"
+               BuildableName = "BeerPodTestTests.xctest"
+               BlueprintName = "BeerPodTestTests"
+               ReferencedContainer = "container:SwiftCollectionView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

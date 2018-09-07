@@ -23,11 +23,10 @@ target 'SwiftCollectionViewTests' do
 end
 
 target 'SwiftCollectionViewUITests' do
-    pod 'Cuckoo'
-    pod 'Alamofire'
-    pod 'AlamofireImage'
-    pod 'Swinject'
     pod 'Swifter'
+    pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'
 end
+
+
 
 

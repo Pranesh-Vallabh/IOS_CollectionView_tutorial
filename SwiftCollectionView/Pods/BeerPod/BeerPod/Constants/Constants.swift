@@ -13,9 +13,9 @@ public struct Constants {
     public static let PunkDetailSegueIdentifier = "showBeerDetails"
     
     public static func getApiUrl() -> String {
-        /*if let mockUrl = LaunchEnvironmentKey.IsMockUrl.processInfoValue() {
+        if let mockUrl = LaunchEnvironmentKey.IsMockUrl.processInfoValue() {
             return mockUrl
-        }*/
+        }
         return "https://api.punkapi.com/v2/beers"
     }
 }

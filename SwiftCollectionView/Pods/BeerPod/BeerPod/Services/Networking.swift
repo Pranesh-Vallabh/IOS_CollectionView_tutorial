@@ -9,9 +9,13 @@
 import Foundation
 import Alamofire
 
-public class Networking: Networkable {
+open class Networking: Networkable {
     
-    public func request(_ completion: @escaping (DataResponse<Any>?) -> Void) {
+    public init() {
+        
+    }
+    
+    open func request(_ completion: @escaping (DataResponse<Any>?) -> Void) {
         Alamofire.request(Constants.getApiUrl()).responseJSON{ (dataResponse) in
             completion(dataResponse)
         }
