@@ -8,6 +8,7 @@
 
 import Foundation
 import XCTest
+import BeerPod
 
 extension XCTestCase {
     func launchAppForUITesting(withAdditionalInfo additionalInfo: [String : String] = [:]) {
@@ -15,7 +16,7 @@ extension XCTestCase {
         
         let app = XCUIApplication()
         
-       // app.launchArguments = [ LaunchEnvironmentKey.IsUITesting.rawValue ]
+        app.launchArguments = [ LaunchEnvironmentKey.IsUITesting.rawValue ]
         
         app.launchEnvironment = additionalInfo
         

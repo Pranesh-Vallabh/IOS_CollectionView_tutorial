@@ -150,7 +150,6 @@
 				0E2DE102213D2817005AEC4D /* errorJSONFormat.json */,
 				0E6FBB11213D1ED3000BCDC7 /* successfulJSON.json */,
 				0E6FBB13213D2032000BCDC7 /* HTTPDynamicStubs.swift */,
-				0E59254921395F1D0037F2CC /* Extensions */,
 				0E15D0782139395E0076B893 /* Info.plist */,
 			);
 			path = SwiftCollectionViewUITests;
@@ -245,13 +244,6 @@
 				0E90B6982140206500E5DF55 /* jjj.swift */,
 			);
 			path = SwiftCollectionViewTests;
-			sourceTree = "<group>";
-		};
-		0E59254921395F1D0037F2CC /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0E90B669213FE5CB00E5DF55 /* View */ = {
