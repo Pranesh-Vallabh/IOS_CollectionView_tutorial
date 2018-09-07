@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   BeerPod:
-    :commit: a716f560cb049db4fbb578c004dfaa6a945bb121
+    :commit: 7c9fa70e50dc0580bd523d9d7b1ad9b76e40d63f
     :git: https://github.com/Pranesh-Vallabh/BeerPod.git
 
 SPEC CHECKSUMS:
