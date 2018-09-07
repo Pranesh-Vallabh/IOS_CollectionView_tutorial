@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import BeerPod
+import ApiPod
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -7,9 +7,7 @@
 //
 
 import XCTest
-//import Alamofire
-//import Cuckoo
-import BeerPod
+import ApiPod
 
 class SwiftCollectionViewUITests: XCTestCase {
     
@@ -74,10 +72,8 @@ class SwiftCollectionViewUITests: XCTestCase {
     }
     
     func setupLaunchEnvironmentIsMockUrl(with url: String) -> [String:String] {
-        return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:8080/api/feed"]
+        return [LaunchEnvironmentKey.MockUrl.rawValue: "http://localhost:8080/api/feed"]
         //return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:1236" + url]
     }
- 
- 
     
 }

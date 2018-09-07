@@ -8,9 +8,9 @@
 
 import XCTest
 import Cuckoo
-import BeerPod
+import ApiPod
 @testable import SwiftCollectionView
-//"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift"
+
 class SwiftCollectionViewTests: XCTestCase {
     
 

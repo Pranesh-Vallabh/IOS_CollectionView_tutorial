@@ -30,12 +30,12 @@
 		0E6FBB14213D2032000BCDC7 /* HTTPDynamicStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6FBB13213D2032000BCDC7 /* HTTPDynamicStubs.swift */; };
 		0E90B66B213FE5EE00E5DF55 /* BeerPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E90B66A213FE5EE00E5DF55 /* BeerPhotoCell.swift */; };
 		0E90B66F214005AF00E5DF55 /* GeneratedMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E90B66E214005AF00E5DF55 /* GeneratedMocks.swift */; };
-		0E90B6992140206500E5DF55 /* jjj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E90B6982140206500E5DF55 /* jjj.swift */; };
-		0EF71F1E2142338500730E57 /* BeerPodHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F1D2142338500730E57 /* BeerPodHeader.swift */; };
-		0EF71F2A2142490700730E57 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F272142490700730E57 /* NetworkingTests.swift */; };
-		0EF71F2B2142490700730E57 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F282142490700730E57 /* BeerListViewModelTests.swift */; };
-		0EF71F2C2142490700730E57 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F292142490700730E57 /* BeerRepositoryTests.swift */; };
+		0EF71F1E2142338500730E57 /* ApiPodHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F1D2142338500730E57 /* ApiPodHeader.swift */; };
 		0EF71F3021425B1D00730E57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F2F21425B1D00730E57 /* Constants.swift */; };
+		0EF71F3521427CE700730E57 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F3421427CE700730E57 /* Beer.swift */; };
+		0EF71F7721431CD000730E57 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F7421431CD000730E57 /* NetworkingTests.swift */; };
+		0EF71F7821431CD000730E57 /* ApiListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F7521431CD000730E57 /* ApiListViewModelTests.swift */; };
+		0EF71F7921431CD000730E57 /* ApiRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F7621431CD000730E57 /* ApiRepositoryTests.swift */; };
 		6FCCB4B353B30D33BEC49881 /* libPods-SwiftCollectionViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 421D1A8EF21FA1AC6414FC39 /* libPods-SwiftCollectionViewUITests.a */; };
 		9743995E0132368327D56ADA /* libPods-SwiftCollectionViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08C4992F0276216F9EC5962 /* libPods-SwiftCollectionViewTests.a */; };
 		AA9CB37B4EBFDA146173A66E /* Pods_SwiftCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */; };
@@ -99,12 +99,12 @@
 		0E883FE7213EB34600C113B6 /* BeerPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BeerPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E90B66A213FE5EE00E5DF55 /* BeerPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPhotoCell.swift; sourceTree = "<group>"; };
 		0E90B66E214005AF00E5DF55 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
-		0E90B6982140206500E5DF55 /* jjj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jjj.swift; sourceTree = "<group>"; };
-		0EF71F1D2142338500730E57 /* BeerPodHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerPodHeader.swift; sourceTree = "<group>"; };
-		0EF71F272142490700730E57 /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
-		0EF71F282142490700730E57 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
-		0EF71F292142490700730E57 /* BeerRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerRepositoryTests.swift; sourceTree = "<group>"; };
+		0EF71F1D2142338500730E57 /* ApiPodHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPodHeader.swift; sourceTree = "<group>"; };
 		0EF71F2F21425B1D00730E57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0EF71F3421427CE700730E57 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		0EF71F7421431CD000730E57 /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		0EF71F7521431CD000730E57 /* ApiListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiListViewModelTests.swift; sourceTree = "<group>"; };
+		0EF71F7621431CD000730E57 /* ApiRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRepositoryTests.swift; sourceTree = "<group>"; };
 		29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		2DEFC6B0226207C2F9FB16AA /* Pods-SwiftCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		421D1A8EF21FA1AC6414FC39 /* libPods-SwiftCollectionViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftCollectionViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +193,7 @@
 		0E21786F211B137300680721 /* SwiftCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0EF71F3321427CDB00730E57 /* Model */,
 				0EF71F2E2142599E00730E57 /* Constants */,
 				0E90B669213FE5CB00E5DF55 /* View */,
 				0E15D07E213949A40076B893 /* AccessibilityDetails */,
@@ -203,7 +204,7 @@
 				0E217877211B137300680721 /* Assets.xcassets */,
 				0E217879211B137300680721 /* LaunchScreen.storyboard */,
 				0E21787C211B137300680721 /* Info.plist */,
-				0EF71F1D2142338500730E57 /* BeerPodHeader.swift */,
+				0EF71F1D2142338500730E57 /* ApiPodHeader.swift */,
 			);
 			path = SwiftCollectionView;
 			sourceTree = "<group>";
@@ -238,13 +239,12 @@
 		0E4433CF212585DE0055B736 /* SwiftCollectionViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				0EF71F282142490700730E57 /* BeerListViewModelTests.swift */,
-				0EF71F292142490700730E57 /* BeerRepositoryTests.swift */,
-				0EF71F272142490700730E57 /* NetworkingTests.swift */,
+				0EF71F7521431CD000730E57 /* ApiListViewModelTests.swift */,
+				0EF71F7621431CD000730E57 /* ApiRepositoryTests.swift */,
+				0EF71F7421431CD000730E57 /* NetworkingTests.swift */,
 				0E90B66E214005AF00E5DF55 /* GeneratedMocks.swift */,
 				0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */,
 				0E4433D2212585DE0055B736 /* Info.plist */,
-				0E90B6982140206500E5DF55 /* jjj.swift */,
 			);
 			path = SwiftCollectionViewTests;
 			sourceTree = "<group>";
@@ -263,6 +263,14 @@
 				0EF71F2F21425B1D00730E57 /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		0EF71F3321427CDB00730E57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EF71F3421427CE700730E57 /* Beer.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7F7A6DCC0A302229CA9D2861 /* Pods */ = {
@@ -437,7 +445,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\n\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/Pods/BeerPod/BeerPod\"\nBEER_INPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$BEER_INPUT_DIR/BeerPodHeader.swift\" \\\n\"$INPUT_DIR/Controllers/BeerListViewable.swift\" \\\n\"$INPUT_DIR/Repository/BeerDataGetable.swift\" \\\n\"$INPUT_DIR/Services/Networkable.swift\" \\\n\"$INPUT_DIR/Services/Networking.swift\"";
+			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\n\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/Pods/ApiPod/ApiPod\"\nBEER_INPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$BEER_INPUT_DIR/ApiPodHeader.swift\" #\\\n#\"$INPUT_DIR/Controllers/ApiListViewable.swift\" \\\n#\"$INPUT_DIR/Repository/ApiDataGetable.swift\" \\\n#\"$INPUT_DIR/Services/Networkable.swift\" \\\n#\"$INPUT_DIR/Services/Networking.swift\"";
 		};
 		1E8A2AFA535053FB8FC8986B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -466,14 +474,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire-framework/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage-framework/AlamofireImage.framework",
-				"${BUILT_PRODUCTS_DIR}/BeerPod-framework/BeerPod.framework",
+				"${BUILT_PRODUCTS_DIR}/ApiPod-framework/ApiPod.framework",
 				"${BUILT_PRODUCTS_DIR}/Swinject-framework/Swinject.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BeerPod.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiPod.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,9 +549,10 @@
 				0EF71F3021425B1D00730E57 /* Constants.swift in Sources */,
 				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
 				0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */,
-				0EF71F1E2142338500730E57 /* BeerPodHeader.swift in Sources */,
+				0EF71F1E2142338500730E57 /* ApiPodHeader.swift in Sources */,
 				0E59254D213969DB0037F2CC /* AccessibilityLabel.swift in Sources */,
 				0E217871211B137300680721 /* AppDelegate.swift in Sources */,
+				0EF71F3521427CE700730E57 /* Beer.swift in Sources */,
 				0E90B66B213FE5EE00E5DF55 /* BeerPhotoCell.swift in Sources */,
 				0E21788B212174CA00680721 /* BeerListViewController.swift in Sources */,
 				0E15D080213949FE0076B893 /* AccessibilityIdentifier.swift in Sources */,
@@ -555,12 +564,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E90B6992140206500E5DF55 /* jjj.swift in Sources */,
+				0EF71F7821431CD000730E57 /* ApiListViewModelTests.swift in Sources */,
 				0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */,
-				0EF71F2B2142490700730E57 /* BeerListViewModelTests.swift in Sources */,
+				0EF71F7721431CD000730E57 /* NetworkingTests.swift in Sources */,
+				0EF71F7921431CD000730E57 /* ApiRepositoryTests.swift in Sources */,
 				0E90B66F214005AF00E5DF55 /* GeneratedMocks.swift in Sources */,
-				0EF71F2A2142490700730E57 /* NetworkingTests.swift in Sources */,
-				0EF71F2C2142490700730E57 /* BeerRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

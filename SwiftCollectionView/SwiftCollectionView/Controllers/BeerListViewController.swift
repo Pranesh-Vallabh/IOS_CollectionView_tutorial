@@ -7,24 +7,23 @@
 //
 
 import UIKit
-import BeerPod
+import ApiPod
 class BeerListViewController: UIViewController {
     
-
     var beers = [Beer]()
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    lazy var beerListViewModel: BeerListViewModelable = {
-        BeerListViewModel(beerListView: self)
+    lazy var beerListViewModel: ApiListViewModelable = {
+        ApiListViewModel(apiListView: self, apiUrl: Constants.punkApiUrl)
     }()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ApiURL.setupApiUrl(with: Constants.punkApiUrl)
+        //ApiURL.setupApiUrl(with: Constants.punkApiUrl)
         setupAccessibilityAndLocalization()
-        getBeerData()
+        getApiData()
     }
 
     func setupAccessibilityAndLocalization() {
@@ -76,21 +75,20 @@ extension BeerListViewController: UICollectionViewDataSource {
     }
 }
 
-extension BeerListViewController : BeerListViewable {
-    func getBeerData() {
-        self.beerListViewModel.getBeerData()
+extension BeerListViewController : ApiListViewable {
+    
+    func getApiData() {
+        self.beerListViewModel.getApiData(modelType: Beer.self)
     }
     
     func showErrorMessage(errorMessage: String) {
         print(errorMessage)
     }
     
-    func showBeerList(beers: [Beer]) {
-        self.beers = beers
+    func showApiItemList(itemList: [Modelable]) {
+        self.beers = itemList as! [Beer]
         self.collectionView.reloadData()
     }
     
 }
-
-
 

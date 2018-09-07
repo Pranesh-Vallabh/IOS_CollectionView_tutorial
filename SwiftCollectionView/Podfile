@@ -10,7 +10,8 @@ target 'SwiftCollectionView' do
   pod 'Alamofire'
   pod 'AlamofireImage'
   pod 'Swinject'
-  pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'#'~/Documents/Libraries/BeerPod'
+  pod 'ApiPod', :git => 'https://github.com/Pranesh-Vallabh/ApiPod.git'
+  #pod 'BeerPod', :path => '~/Documents/Libraries/BeerPod'
 
 end
 
@@ -19,12 +20,14 @@ target 'SwiftCollectionViewTests' do
     pod 'Alamofire'
     pod 'AlamofireImage'
     pod 'Swinject'
-    pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'
+    pod 'ApiPod', :git => 'https://github.com/Pranesh-Vallabh/ApiPod.git'
+    # pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'
 end
 
 target 'SwiftCollectionViewUITests' do
     pod 'Swifter'
-    pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'
+    pod 'ApiPod', :git => 'https://github.com/Pranesh-Vallabh/ApiPod.git'
+    #pod 'BeerPod', :git => 'https://github.com/Pranesh-Vallabh/BeerPod.git'
 end
 
 

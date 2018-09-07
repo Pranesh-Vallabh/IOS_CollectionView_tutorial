@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import BeerPod
+import ApiPod
 
 class BeerPhotoCell: UICollectionViewCell {
     

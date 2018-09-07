@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-import BeerPod
+import ApiPod
 
 extension XCTestCase {
     func launchAppForUITesting(withAdditionalInfo additionalInfo: [String : String] = [:]) {

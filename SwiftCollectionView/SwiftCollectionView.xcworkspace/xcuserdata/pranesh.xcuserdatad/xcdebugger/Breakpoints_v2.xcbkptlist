@@ -361,24 +361,8 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SwiftCollectionView/Controllers/BeerListViewController.swift"
-            timestampString = "557998078.3352489"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "getBeerData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "SwiftCollectionView/AppDelegate.swift"
-            timestampString = "557819620.499817"
+            timestampString = "558045263.30559"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
@@ -426,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewUITests/SwiftCollectionViewUITests.swift"
-            timestampString = "557998078.335372"
+            timestampString = "558046522.365465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "testGivenWhenFirstCollectionViewCellIsPressedThenBeerDetailScreenAppearsWithTheCorrectBeerDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewUITests/SwiftCollectionViewUITests.swift"
-            timestampString = "557998078.3354501"
+            timestampString = "558046522.365872"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "testGivenABeerDetailScreenWhenBeerDetailScreenBackButtonIsPressedThenBeerListScreenAppears()"
             landmarkType = "7">
             <Locations>
@@ -618,12 +602,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftCollectionViewUITests/SwiftCollectionViewUITests.swift"
-            timestampString = "557998078.335668"
+            timestampString = "558046522.366208"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "setupLaunchEnvironmentIsMockUrl(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/Libraries/BeerPod/BeerPod/Repository/BeerRepository.swift"
+            timestampString = "558021604.438961"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchApiData(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Documents/Libraries/BeerPod/BeerPod/Repository/BeerRepository.swift"
+            timestampString = "558021604.439731"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchApiData(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

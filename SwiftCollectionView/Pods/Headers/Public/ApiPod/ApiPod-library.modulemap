@@ -1,0 +1,6 @@
+module ApiPod {
+  umbrella header "ApiPod-library-umbrella.h"
+
+  export *
+  module * { export * }
+}

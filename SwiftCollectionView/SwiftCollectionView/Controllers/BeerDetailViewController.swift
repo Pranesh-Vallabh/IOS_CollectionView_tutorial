@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import BeerPod
+import ApiPod
 class BeerDetailViewController: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
