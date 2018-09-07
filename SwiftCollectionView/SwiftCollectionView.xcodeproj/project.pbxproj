@@ -35,6 +35,7 @@
 		0EF71F2A2142490700730E57 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F272142490700730E57 /* NetworkingTests.swift */; };
 		0EF71F2B2142490700730E57 /* BeerListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F282142490700730E57 /* BeerListViewModelTests.swift */; };
 		0EF71F2C2142490700730E57 /* BeerRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F292142490700730E57 /* BeerRepositoryTests.swift */; };
+		0EF71F3021425B1D00730E57 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF71F2F21425B1D00730E57 /* Constants.swift */; };
 		6FCCB4B353B30D33BEC49881 /* libPods-SwiftCollectionViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 421D1A8EF21FA1AC6414FC39 /* libPods-SwiftCollectionViewUITests.a */; };
 		9743995E0132368327D56ADA /* libPods-SwiftCollectionViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08C4992F0276216F9EC5962 /* libPods-SwiftCollectionViewTests.a */; };
 		AA9CB37B4EBFDA146173A66E /* Pods_SwiftCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514EFD5F16EB3D17D58024F4 /* Pods_SwiftCollectionView.framework */; };
@@ -103,6 +104,7 @@
 		0EF71F272142490700730E57 /* NetworkingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		0EF71F282142490700730E57 /* BeerListViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerListViewModelTests.swift; sourceTree = "<group>"; };
 		0EF71F292142490700730E57 /* BeerRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerRepositoryTests.swift; sourceTree = "<group>"; };
+		0EF71F2F21425B1D00730E57 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29A95A77F015D02DCC6386C8 /* Pods-SwiftCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.release.xcconfig"; sourceTree = "<group>"; };
 		2DEFC6B0226207C2F9FB16AA /* Pods-SwiftCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionView/Pods-SwiftCollectionView.debug.xcconfig"; sourceTree = "<group>"; };
 		421D1A8EF21FA1AC6414FC39 /* libPods-SwiftCollectionViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftCollectionViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,6 +193,7 @@
 		0E21786F211B137300680721 /* SwiftCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0EF71F2E2142599E00730E57 /* Constants */,
 				0E90B669213FE5CB00E5DF55 /* View */,
 				0E15D07E213949A40076B893 /* AccessibilityDetails */,
 				0E21789C2121A3BD00680721 /* Extensions */,
@@ -252,6 +255,14 @@
 				0E90B66A213FE5EE00E5DF55 /* BeerPhotoCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		0EF71F2E2142599E00730E57 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				0EF71F2F21425B1D00730E57 /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		7F7A6DCC0A302229CA9D2861 /* Pods */ = {
@@ -527,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6FBB0F213D0672000BCDC7 /* LocalizedString.swift in Sources */,
+				0EF71F3021425B1D00730E57 /* Constants.swift in Sources */,
 				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
 				0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */,
 				0EF71F1E2142338500730E57 /* BeerPodHeader.swift in Sources */,

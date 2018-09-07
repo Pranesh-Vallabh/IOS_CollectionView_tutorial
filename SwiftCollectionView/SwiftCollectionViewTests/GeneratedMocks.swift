@@ -1,4 +1,4 @@
-// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Controllers/BeerListViewable.swift at 2018-09-07 06:29:33 +0000
+// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Controllers/BeerListViewable.swift at 2018-09-07 07:27:25 +0000
 
 //
 //  BeerListViewProtocol.swift
@@ -141,7 +141,7 @@ class MockBeerListViewable: BeerListViewable, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Repository/BeerDataGetable.swift at 2018-09-07 06:29:33 +0000
+// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Repository/BeerDataGetable.swift at 2018-09-07 07:27:25 +0000
 
 //
 //  BeerRepositoryProtocol.swift
@@ -230,7 +230,7 @@ class MockBeerDataGetable: BeerDataGetable, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Services/Networkable.swift at 2018-09-07 06:29:33 +0000
+// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Services/Networkable.swift at 2018-09-07 07:27:25 +0000
 
 //
 //  Networkable.swift
@@ -322,7 +322,7 @@ class MockNetworkable: Networkable, Cuckoo.ProtocolMock {
 }
 
 
-// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Services/Networking.swift at 2018-09-07 06:29:33 +0000
+// MARK: - Mocks generated from file: Pods/BeerPod/BeerPod/Services/Networking.swift at 2018-09-07 07:27:25 +0000
 
 //
 //  Networking.swift
@@ -414,7 +414,7 @@ class MockNetworking: Networking, Cuckoo.ClassMock {
 }
 
 
-// MARK: - Mocks generated from file: SwiftCollectionView/BeerPodHeader.swift at 2018-09-07 06:29:33 +0000
+// MARK: - Mocks generated from file: SwiftCollectionView/BeerPodHeader.swift at 2018-09-07 07:27:25 +0000
 
 //
 //  BeerPodHeader.swift

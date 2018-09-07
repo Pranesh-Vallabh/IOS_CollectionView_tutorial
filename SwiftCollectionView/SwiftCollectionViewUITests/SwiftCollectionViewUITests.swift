@@ -62,7 +62,7 @@ class SwiftCollectionViewUITests: XCTestCase {
         XCTAssert(app.navigationBars[LocalizedString.listTitle].exists)
     }
  
-    /*func testGivenAErrorJsonObjectWhenBeerListScreenLoadsThenNoCollectionViewCellsShouldBeDisplayed() {
+    func testGivenAErrorJsonObjectWhenBeerListScreenLoadsThenNoCollectionViewCellsShouldBeDisplayed() {
         dynamicStubs.setupStub(url: "api/feed", filename: "errorJSONFormat", method: .GET)
         dynamicStubs.startServer()
         launchAppForUITesting(withAdditionalInfo: setupLaunchEnvironmentIsMockUrl(with: "/errorBeers"))
@@ -71,7 +71,7 @@ class SwiftCollectionViewUITests: XCTestCase {
         let beerListCollectionView = app.collectionViews[AccessibilityLabel.beerListCollectionView]
         XCTAssertNotNil(beerListCollectionView)
         XCTAssertEqual(beerListCollectionView.cells.count, 0)
-    }*/
+    }
     
     func setupLaunchEnvironmentIsMockUrl(with url: String) -> [String:String] {
         return [LaunchEnvironmentKey.IsMockUrl.rawValue: "http://localhost:8080/api/feed"]

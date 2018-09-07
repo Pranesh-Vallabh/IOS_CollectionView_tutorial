@@ -22,6 +22,7 @@ class BeerListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ApiURL.setupApiUrl(with: Constants.punkApiUrl)
         setupAccessibilityAndLocalization()
         getBeerData()
     }

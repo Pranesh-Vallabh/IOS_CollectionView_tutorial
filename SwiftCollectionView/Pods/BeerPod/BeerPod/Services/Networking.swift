@@ -16,7 +16,7 @@ open class Networking: Networkable {
     }
     
     open func request(_ completion: @escaping (DataResponse<Any>?) -> Void) {
-        Alamofire.request(Constants.getApiUrl()).responseJSON{ (dataResponse) in
+        Alamofire.request(ApiURL.getApiUrl()).responseJSON{ (dataResponse) in
             completion(dataResponse)
         }
     }
