@@ -18,10 +18,8 @@ class BeerListViewController: UIViewController {
         ApiListViewModel<Beer>(apiListView: self, apiUrl: Constants.punkApiUrl)
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //ApiURL.setupApiUrl(with: Constants.punkApiUrl)
         setupAccessibilityAndLocalization()
         getApiData()
     }
@@ -52,7 +50,6 @@ class BeerListViewController: UIViewController {
     }
 }
 
-
 extension BeerListViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -80,7 +77,6 @@ extension BeerListViewController : ApiListViewable {
         self.beers = itemList as! [Beer]
         self.collectionView.reloadData()
     }
-    
     
     func getApiData() {
         self.beerListViewModel.getApiData()

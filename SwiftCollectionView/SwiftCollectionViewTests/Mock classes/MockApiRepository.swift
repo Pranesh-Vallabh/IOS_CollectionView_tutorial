@@ -12,14 +12,11 @@ import Cuckoo
 @testable import SwiftCollectionView
 
 public class SuccessMockApiRepository: NetworkingInjectable, ApiDataGetable {
-    
     private(set) var verifyFetchApiDataCounter: Int = 0
 
     public func fetchApiData<T : Modelable>(_ completion: @escaping ([T]?, Error?) -> Void){
         verifyFetchApiDataCounter += 1
-        
         let items: [T] = BeerSampleData.generateBeerData() as! [T]
-        
         completion(items ,nil)
     }
 }
@@ -32,5 +29,4 @@ public class ErrorMockApiRepository: NetworkingInjectable, ApiDataGetable {
         let error = NSError(domain: "", code: 200, userInfo: [NSLocalizedDescriptionKey: "Error message"])
         completion(nil, error)
     }
-
 }

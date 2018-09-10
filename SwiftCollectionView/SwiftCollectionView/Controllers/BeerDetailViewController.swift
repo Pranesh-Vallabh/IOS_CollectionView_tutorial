@@ -40,5 +40,4 @@ class BeerDetailViewController: UIViewController {
         descriptionLabel.accessibilityIdentifier = AccessibilityIdentifier.Description.rawValue
         tagLineLabel.accessibilityIdentifier = AccessibilityIdentifier.TagLine.rawValue
     }
- 
 }

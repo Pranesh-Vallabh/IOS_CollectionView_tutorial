@@ -10,7 +10,5 @@ import Foundation
 
 enum LocalizedString {
         
-    static let listTitle = NSLocalizedString("List of Beers",
-                                             comment: "Title for the beer list view")
-
+    static let listTitle = NSLocalizedString("List of Beers", comment: "Title for the beer list view")
 }

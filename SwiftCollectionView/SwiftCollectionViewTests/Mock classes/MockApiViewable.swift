@@ -17,7 +17,6 @@ class MockApiViewable: ApiListViewable {
     private(set) var verifyShowErrorMessageCounter: Int = 0
     private(set) var verifyShowApiItemListCounter: Int = 0
     
-
     func getApiData() {
     }
     
@@ -31,8 +30,4 @@ class MockApiViewable: ApiListViewable {
         let beers = itemList as! [Beer]
         XCTAssertEqual(beers, BeerSampleData.generateBeerData())
     }
-    
- 
-    
-    
 }

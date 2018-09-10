@@ -44,16 +44,12 @@ class ApiListViewModelTests: XCTestCase {
         Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
             self.mainAsyncExpectation?.fulfill()
         }
-        
         wait(for: [mainAsyncExpectation!], timeout: 30)
         
         XCTAssertEqual(mockSuccessBeerRepository.verifyFetchApiDataCounter, 1)
         XCTAssertEqual(mockBeerListView.verifyShowErrorMessageCounter, 0)
         XCTAssertEqual(mockBeerListView.verifyShowApiItemListCounter, 1)
-        
     }
-    
-
     
     func testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError() {
         Resolver.reset()
