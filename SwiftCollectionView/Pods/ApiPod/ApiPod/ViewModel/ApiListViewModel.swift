@@ -7,7 +7,7 @@
 //
 import UIKit
 
-public class ApiListViewModel: ApiListViewModelable, ApiRepositoryInjectable {
+public class ApiListViewModel<T: Modelable>: ApiListViewModelable, ApiRepositoryInjectable {
     
     private weak var apiListView: ApiListViewable?
     
@@ -17,7 +17,7 @@ public class ApiListViewModel: ApiListViewModelable, ApiRepositoryInjectable {
         
     }
     
-    public func getApiData<T: Modelable>(modelType: T.Type) {
+    public func getApiData() {
         guard let apiListView = apiListView else {
             return
         }

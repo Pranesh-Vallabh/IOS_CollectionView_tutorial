@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol ApiListViewModelable {
-    func getApiData<T: Modelable>(modelType: T.Type)
+    func getApiData()
 }

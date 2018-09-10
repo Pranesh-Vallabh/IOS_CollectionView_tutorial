@@ -15,7 +15,7 @@ class BeerListViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
     lazy var beerListViewModel: ApiListViewModelable = {
-        ApiListViewModel(apiListView: self, apiUrl: Constants.punkApiUrl)
+        ApiListViewModel<Beer>(apiListView: self, apiUrl: Constants.punkApiUrl)
     }()
     
     
@@ -78,7 +78,7 @@ extension BeerListViewController: UICollectionViewDataSource {
 extension BeerListViewController : ApiListViewable {
     
     func getApiData() {
-        self.beerListViewModel.getApiData(modelType: Beer.self)
+        self.beerListViewModel.getApiData()
     }
     
     func showErrorMessage(errorMessage: String) {
