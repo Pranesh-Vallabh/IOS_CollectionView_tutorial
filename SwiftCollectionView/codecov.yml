@@ -3,7 +3,14 @@ codecov:
     token: 7af58a49-33fe-43f2-bf72-debfd15a19cf
 
 ignore:
-    - "SwiftCollectionView/Pods/.*"
+    - "SwiftCollectionView/Pods/Alamofire/.*"
+    - "SwiftCollectionView/Pods/AlamofireImage/.*"
+    - "SwiftCollectionView/Pods/Cuckoo/.*"
+    - "SwiftCollectionView/Pods/Headers/.*"
+    - "SwiftCollectionView/Pods/Local Podspecs/.*"
+    - "SwiftCollectionView/Pods/Swifter/.*"
+    - "SwiftCollectionView/Pods/Swinject/.*"
+    - "SwiftCollectionView/Pods/Target Support Files/.*"
     - "SwiftCollectionView/SwiftCollectionViewTests/.*"
     - "SwiftCollectionView/SwiftCollectionViewUITests/.*"
 
