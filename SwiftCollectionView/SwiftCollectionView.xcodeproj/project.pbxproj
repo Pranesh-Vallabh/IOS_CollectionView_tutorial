@@ -21,6 +21,7 @@
 		0E429599212D50850081BC41 /* codecov.yml in Resources */ = {isa = PBXBuildFile; fileRef = 0E429598212D50850081BC41 /* codecov.yml */; };
 		0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */; };
 		0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434122125A4900055B736 /* ImageViewDownloadable.swift */; };
+		0E53A93121463E5900602E1A /* GenerateMocks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0E53A93021463B4600602E1A /* GenerateMocks.sh */; };
 		0E59254B2139685F0037F2CC /* SwiftCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254A2139685F0037F2CC /* SwiftCollectionViewUITests.swift */; };
 		0E59254D213969DB0037F2CC /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */; };
 		0E59254E21396B880037F2CC /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */; };
@@ -91,6 +92,7 @@
 		0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewTests.swift; sourceTree = "<group>"; };
 		0E4433D2212585DE0055B736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E4434122125A4900055B736 /* ImageViewDownloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDownloadable.swift; sourceTree = "<group>"; };
+		0E53A93021463B4600602E1A /* GenerateMocks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateMocks.sh; sourceTree = "<group>"; };
 		0E59254A2139685F0037F2CC /* SwiftCollectionViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewUITests.swift; sourceTree = "<group>"; };
 		0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityLabel.swift; sourceTree = "<group>"; };
 		0E6FBB0E213D0672000BCDC7 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				0E90B66E214005AF00E5DF55 /* GeneratedMocks.swift */,
 				0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */,
 				0E4433D2212585DE0055B736 /* Info.plist */,
+				0E53A93021463B4600602E1A /* GenerateMocks.sh */,
 			);
 			path = SwiftCollectionViewTests;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E53A93121463E5900602E1A /* GenerateMocks.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +449,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Define output file. Change \"$PROJECT_DIR/${PROJECT_NAME}Tests\" to your test's root source folder, if it's not the default name.\nOUTPUT_FILE=\"$PROJECT_DIR/${PROJECT_NAME}Tests/GeneratedMocks.swift\"\n\necho \"Generated Mocks File = $OUTPUT_FILE\"\n\n# Define input directory. Change \"${PROJECT_DIR}/${PROJECT_NAME}\" to your project's root source folder, if it's not the default name.\nINPUT_DIR=\"${PROJECT_DIR}/Pods/ApiPod/ApiPod\"\nBEER_INPUT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\necho \"Mocks Input Directory = $INPUT_DIR\"\n\n# Generate mock files, include as many input files as you'd like to create mocks for.\n\"${PODS_ROOT}/Cuckoo/run\" generate --testable \"$PROJECT_NAME\" \\\n--output \"${OUTPUT_FILE}\" \\\n\"$BEER_INPUT_DIR/ApiPodHeader.swift\" #\\\n#\"$INPUT_DIR/Controllers/ApiListViewable.swift\" \\\n#\"$INPUT_DIR/Repository/ApiDataGetable.swift\" \\\n#\"$INPUT_DIR/Services/Networkable.swift\" \\\n#\"$INPUT_DIR/Services/Networking.swift\"";
+			shellScript = "\n$SRCROOT/${PROJECT_NAME}Tests/GenerateMocks.sh";
 		};
 		1E8A2AFA535053FB8FC8986B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
