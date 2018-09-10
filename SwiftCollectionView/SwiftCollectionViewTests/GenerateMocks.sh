@@ -11,7 +11,10 @@ echo "Mocks Input Directory = $INPUT_DIR"
 # Generate mock files, include as many input files as you'd like to create mocks for.
 "${PODS_ROOT}/Cuckoo/run" generate --testable "$PROJECT_NAME" \
 --output "${OUTPUT_FILE}" \
-"$BEER_INPUT_DIR/ApiPodHeader.swift" #\
+"$BEER_INPUT_DIR/ApiPodHeader.swift" \
+"$INPUT_DIR/Services/Networkable.swift" \
+"$INPUT_DIR/Services/Networking.swift" 
+#\
 #"$INPUT_DIR/Controllers/ApiListViewable.swift" \
 #"$INPUT_DIR/Repository/ApiDataGetable.swift" \
 #"$INPUT_DIR/Services/Networkable.swift" \

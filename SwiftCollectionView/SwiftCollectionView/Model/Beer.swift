@@ -9,7 +9,6 @@
 import Foundation
 import ApiPod
 public struct Beer: Modelable, Equatable {
-    // public typealias Model = Beer
     public let name: String
     public let tagline: String
     public let description: String

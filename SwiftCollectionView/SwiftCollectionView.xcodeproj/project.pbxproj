@@ -22,6 +22,9 @@
 		0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4433D0212585DE0055B736 /* SwiftCollectionViewTests.swift */; };
 		0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4434122125A4900055B736 /* ImageViewDownloadable.swift */; };
 		0E53A93121463E5900602E1A /* GenerateMocks.sh in Resources */ = {isa = PBXBuildFile; fileRef = 0E53A93021463B4600602E1A /* GenerateMocks.sh */; };
+		0E53A95121465A9000602E1A /* MockApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A95021465A9000602E1A /* MockApiRepository.swift */; };
+		0E53A95521465CC900602E1A /* BeerSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A95321465C9B00602E1A /* BeerSampleData.swift */; };
+		0E53A9582146723700602E1A /* MockApiViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A9572146723700602E1A /* MockApiViewable.swift */; };
 		0E59254B2139685F0037F2CC /* SwiftCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254A2139685F0037F2CC /* SwiftCollectionViewUITests.swift */; };
 		0E59254D213969DB0037F2CC /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */; };
 		0E59254E21396B880037F2CC /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */; };
@@ -93,6 +96,9 @@
 		0E4433D2212585DE0055B736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E4434122125A4900055B736 /* ImageViewDownloadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewDownloadable.swift; sourceTree = "<group>"; };
 		0E53A93021463B4600602E1A /* GenerateMocks.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateMocks.sh; sourceTree = "<group>"; };
+		0E53A95021465A9000602E1A /* MockApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiRepository.swift; sourceTree = "<group>"; };
+		0E53A95321465C9B00602E1A /* BeerSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerSampleData.swift; sourceTree = "<group>"; };
+		0E53A9572146723700602E1A /* MockApiViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiViewable.swift; sourceTree = "<group>"; };
 		0E59254A2139685F0037F2CC /* SwiftCollectionViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewUITests.swift; sourceTree = "<group>"; };
 		0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityLabel.swift; sourceTree = "<group>"; };
 		0E6FBB0E213D0672000BCDC7 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
@@ -195,6 +201,7 @@
 		0E21786F211B137300680721 /* SwiftCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				0E53A95621465CCD00602E1A /* Sample Data */,
 				0EF71F3321427CDB00730E57 /* Model */,
 				0EF71F2E2142599E00730E57 /* Constants */,
 				0E90B669213FE5CB00E5DF55 /* View */,
@@ -241,6 +248,7 @@
 		0E4433CF212585DE0055B736 /* SwiftCollectionViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				0E53A95221465B0500602E1A /* Mock classes */,
 				0EF71F7521431CD000730E57 /* ApiListViewModelTests.swift */,
 				0EF71F7621431CD000730E57 /* ApiRepositoryTests.swift */,
 				0EF71F7421431CD000730E57 /* NetworkingTests.swift */,
@@ -250,6 +258,23 @@
 				0E53A93021463B4600602E1A /* GenerateMocks.sh */,
 			);
 			path = SwiftCollectionViewTests;
+			sourceTree = "<group>";
+		};
+		0E53A95221465B0500602E1A /* Mock classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E53A95021465A9000602E1A /* MockApiRepository.swift */,
+				0E53A9572146723700602E1A /* MockApiViewable.swift */,
+			);
+			path = "Mock classes";
+			sourceTree = "<group>";
+		};
+		0E53A95621465CCD00602E1A /* Sample Data */ = {
+			isa = PBXGroup;
+			children = (
+				0E53A95321465C9B00602E1A /* BeerSampleData.swift */,
+			);
+			path = "Sample Data";
 			sourceTree = "<group>";
 		};
 		0E90B669213FE5CB00E5DF55 /* View */ = {
@@ -553,6 +578,7 @@
 				0EF71F3021425B1D00730E57 /* Constants.swift in Sources */,
 				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
 				0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */,
+				0E53A95521465CC900602E1A /* BeerSampleData.swift in Sources */,
 				0EF71F1E2142338500730E57 /* ApiPodHeader.swift in Sources */,
 				0E59254D213969DB0037F2CC /* AccessibilityLabel.swift in Sources */,
 				0E217871211B137300680721 /* AppDelegate.swift in Sources */,
@@ -568,6 +594,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E53A9582146723700602E1A /* MockApiViewable.swift in Sources */,
+				0E53A95121465A9000602E1A /* MockApiRepository.swift in Sources */,
 				0EF71F7821431CD000730E57 /* ApiListViewModelTests.swift in Sources */,
 				0E4433D1212585DE0055B736 /* SwiftCollectionViewTests.swift in Sources */,
 				0EF71F7721431CD000730E57 /* NetworkingTests.swift in Sources */,

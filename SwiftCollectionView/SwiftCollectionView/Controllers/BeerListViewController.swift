@@ -76,6 +76,11 @@ extension BeerListViewController: UICollectionViewDataSource {
 }
 
 extension BeerListViewController : ApiListViewable {
+    func showApiItemList<T>(itemList: [T]) where T : Modelable {
+        self.beers = itemList as! [Beer]
+        self.collectionView.reloadData()
+    }
+    
     
     func getApiData() {
         self.beerListViewModel.getApiData()
@@ -84,11 +89,5 @@ extension BeerListViewController : ApiListViewable {
     func showErrorMessage(errorMessage: String) {
         print(errorMessage)
     }
-    
-    func showApiItemList(itemList: [Modelable]) {
-        self.beers = itemList as! [Beer]
-        self.collectionView.reloadData()
-    }
-    
 }
 

@@ -31,7 +31,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ApiPod:
-    :commit: c40764f1990588671a81915d8d01d999299c6500
+    :commit: 9ebd91310ba1b86f8418c0c9f75937343b8f2d6d
     :git: https://github.com/Pranesh-Vallabh/ApiPod.git
 
 SPEC CHECKSUMS:

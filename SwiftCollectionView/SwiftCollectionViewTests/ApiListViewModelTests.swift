@@ -9,89 +9,73 @@
 import XCTest
 import Cuckoo
 import ApiPod
+import Foundation
 @testable import SwiftCollectionView
 
 class ApiListViewModelTests: XCTestCase {
-  /*
-    let mockBeerListView: MockBeerListViewable = MockBeerListViewable()
-    let mockBeerRepository: MockBeerDataGetable = MockBeerDataGetable()
-    lazy var systemUnderTests = {
-        BeerListViewModel(beerListView: mockBeerListView)
-    }()
-
-    var globalAsyncExpectation: XCTestExpectation?
+  
+    let mockBeerListView: MockApiViewable = MockApiViewable()
+    let mockSuccessBeerRepository = SuccessMockApiRepository()
+    let mockFailBeerRepository = ErrorMockApiRepository()
     var mainAsyncExpectation: XCTestExpectation?
+    lazy var systemUnderTests = {
+        ApiListViewModel<Beer>(apiListView: mockBeerListView, apiUrl: Constants.punkApiUrl)
+    }()
     
     override func setUp() {
         super.setUp()
-        globalAsyncExpectation = expectation(description: "Global async")
-        mainAsyncExpectation = expectation(description: "Main async")
+        mainAsyncExpectation = XCTestExpectation(description: "testing")
     }
     
     override func tearDown() {
-        globalAsyncExpectation = nil
-        mainAsyncExpectation = nil
+       mainAsyncExpectation = nil
         super.tearDown()
     }
     
     func testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsSuccessfully() {
         Resolver.reset()
-        stub(mockBeerRepository){ (mock) in
-            when(mock.fetchBeerData(any())).then { completion in
-                completion(SampleData.generateBeerData(),nil)
-                self.globalAsyncExpectation?.fulfill()
-            }
+        let container = DepedencyContainer.instance
+        container.register(dependecy: ApiDataGetable.self, implementation: {
+            return self.mockSuccessBeerRepository
+        })
+        
+        systemUnderTests.getApiData()
+        
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
+            self.mainAsyncExpectation?.fulfill()
         }
-        setupStubsForBeerListViewable()
-        setupDependencyContainerForBeerDataGetable()
         
-        systemUnderTests.getBeerData()
-        wait(for: [globalAsyncExpectation!, mainAsyncExpectation!], timeout: 20)
+        wait(for: [mainAsyncExpectation!], timeout: 30)
         
-        verify(mockBeerRepository, times(1)).fetchBeerData(any())
-        verify(mockBeerListView, times(1)).showBeerList(beers: equal(to: SampleData.generateBeerData()))
-        verify(mockBeerListView, never()).showErrorMessage(errorMessage: any())
+        XCTAssertEqual(mockSuccessBeerRepository.verifyFetchApiDataCounter, 1)
+        XCTAssertEqual(mockBeerListView.verifyShowErrorMessageCounter, 0)
+        XCTAssertEqual(mockBeerListView.verifyShowApiItemListCounter, 1)
+        
     }
+    
+
     
     func testGivenAViewAndRepoWhenGetBeerDataIsCalledItReturnsAnError() {
         Resolver.reset()
-        let error = NSError(domain: "", code: 200, userInfo: [NSLocalizedDescriptionKey: "Error message"])
-        stub(mockBeerRepository){ (mock) in
-            when(mock.fetchBeerData(any())).then { completion in
-                completion(nil,error)
-                self.globalAsyncExpectation?.fulfill()
-            }
-        }
-        setupStubsForBeerListViewable()
-        setupDependencyContainerForBeerDataGetable()
-        
-        systemUnderTests.getBeerData()
-        wait(for: [globalAsyncExpectation!, mainAsyncExpectation!], timeout: 20)
-        
-        verify(mockBeerRepository, times(1)).fetchBeerData(any())
-        verify(mockBeerListView, times(1)).showErrorMessage(errorMessage: equal(to: error.localizedDescription))
-        verify(mockBeerListView, never()).showBeerList(beers: any())
-    }
-    
-    func setupStubsForBeerListViewable() {
-        stub(mockBeerListView){ (mock) in
-            when(mock.getBeerData()).thenDoNothing()
-            when(mock.showBeerList(beers: any())).then({ _ in
-                self.mainAsyncExpectation?.fulfill()
-            })
-            when(mock.showErrorMessage(errorMessage: any())).then{ _ in
-                self.mainAsyncExpectation?.fulfill()
-            }
-        }
-    }
-    
-    func setupDependencyContainerForBeerDataGetable() {
+ 
         let container = DepedencyContainer.instance
-        container.register(dependecy: BeerDataGetable.self, implementation: {
-            return self.mockBeerRepository
+        container.register(dependecy: ApiDataGetable.self, implementation: {
+            return self.mockFailBeerRepository
         })
+        
+        systemUnderTests.getApiData()
+        
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: false) { _ in
+            self.mainAsyncExpectation?.fulfill()
+        }
+        
+        wait(for: [mainAsyncExpectation!], timeout: 30)
+        
+        XCTAssertEqual(mockFailBeerRepository.verifyFetchApiDataCounter, 1)
+        XCTAssertEqual(mockBeerListView.verifyShowErrorMessageCounter, 1)
+        XCTAssertEqual(mockBeerListView.verifyShowApiItemListCounter, 0)
     }
-    */
+    
 }
 
 

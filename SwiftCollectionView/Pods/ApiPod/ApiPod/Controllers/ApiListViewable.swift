@@ -9,5 +9,5 @@
 public protocol ApiListViewable : class {
     func getApiData()
     func showErrorMessage(errorMessage: String)
-    func showApiItemList(itemList: [Modelable])
+    func showApiItemList<T: Modelable>(itemList: [T])
 }

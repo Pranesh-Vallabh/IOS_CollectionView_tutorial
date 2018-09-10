@@ -14,13 +14,13 @@ import Alamofire
 @testable import SwiftCollectionView
 
 class ApiRepositoryTests: XCTestCase {
-  /*
-    var systemUnderTest: BeerDataGetable?
+  
+    var systemUnderTest: ApiDataGetable?
     var mockNetworking = MockNetworkable()
     
     override func setUp() {
         super.setUp()
-        systemUnderTest = BeerRepository()
+        systemUnderTest = ApiRepository()
     }
     
     override func tearDown() {
@@ -38,7 +38,7 @@ class ApiRepositoryTests: XCTestCase {
             }
         }
         setupDependencyContainerForNetworkable()
-        systemUnderTest?.fetchBeerData{ (beers, error) in
+        systemUnderTest?.fetchApiData{ (beers:[Beer]?, error) in
             XCTAssertNil(error, "Expected a nil error object")
             XCTAssertNotNil(beers, "Expected a non-nil beers object")
             XCTAssertNotNil(expectedBeerJsonObject, "Expected a non-nil expectedBeerJsonObject")
@@ -57,7 +57,7 @@ class ApiRepositoryTests: XCTestCase {
             }
         }
         setupDependencyContainerForNetworkable()
-        systemUnderTest?.fetchBeerData{(beers, error) in
+        systemUnderTest?.fetchApiData{ (beers:[Beer]?, error) in
             XCTAssertNotNil(error, "Expect a non-nil error object")
             XCTAssertNil(beers, "Expected a nil beers object")
             XCTAssertEqual(self.setupMockErrorMessage(), error?.localizedDescription)
@@ -75,7 +75,7 @@ class ApiRepositoryTests: XCTestCase {
             }
         }
         setupDependencyContainerForNetworkable()
-        systemUnderTest?.fetchBeerData{(beers, error) in
+        systemUnderTest?.fetchApiData{ (beers:[Beer]?, error) in
             XCTAssertNotNil(error, "Expected a non-nil error object")
             XCTAssertNil(beers, "Expected a nil beers object")
         }
@@ -92,7 +92,7 @@ class ApiRepositoryTests: XCTestCase {
             }
         }
         setupDependencyContainerForNetworkable()
-        systemUnderTest?.fetchBeerData{(beers, error) in
+        systemUnderTest?.fetchApiData{ (beers:[Beer]?, error) in
             XCTAssertNil(error, "Expected a nil error object")
             XCTAssertNil(beers, "Expected a nil beers object")
         }
@@ -109,7 +109,7 @@ class ApiRepositoryTests: XCTestCase {
             }
         }
         setupDependencyContainerForNetworkable()
-        systemUnderTest?.fetchBeerData{(beers, error) in
+        systemUnderTest?.fetchApiData{ (beers:[Beer]?, error) in
             XCTAssertNil(error, "Expected a nil error object")
             XCTAssertNil(beers, "Expected a nil beers object")
         }
@@ -157,8 +157,7 @@ class ApiRepositoryTests: XCTestCase {
     }
     
     func setupMockHttpUrlResponseForPunkApi() -> HTTPURLResponse? {
-        ApiURL.setupApiUrl(with: Constants.punkApiUrl)
-        guard let url = URL(string: ApiURL.getApiUrl()) else {
+        guard let url = URL(string: Constants.punkApiUrl) else {
             XCTFail("Cannot convert Constants.ApiUrl string to URL")
             return nil
         }
@@ -209,5 +208,5 @@ class ApiRepositoryTests: XCTestCase {
         let jsonErrorBeerData = jsonErrorBeerString.data(using: .utf8)
         return jsonErrorBeerData
     }
-    */
+ 
 }
