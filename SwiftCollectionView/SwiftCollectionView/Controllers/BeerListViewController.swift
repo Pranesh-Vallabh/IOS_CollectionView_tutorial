@@ -23,6 +23,13 @@ class BeerListViewController: UIViewController {
         setupAccessibilityAndLocalization()
         getApiData()
     }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        guard let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        flowLayout.invalidateLayout()
+    }
 
     func setupAccessibilityAndLocalization() {
         collectionView.accessibilityLabel = AccessibilityLabel.beerListCollectionView
@@ -70,6 +77,23 @@ extension BeerListViewController: UICollectionViewDataSource {
         
         return cell
     }
+}
+
+extension BeerListViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let numberOfItemsInARow: CGFloat = view.isSizeClassWidthRegular() ? 3 : 2
+        return CGSize(width: view.frame.width / numberOfItemsInARow, height: 300)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
 }
 
 extension BeerListViewController : ApiListViewable {

@@ -25,6 +25,8 @@
 		0E53A95121465A9000602E1A /* MockApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A95021465A9000602E1A /* MockApiRepository.swift */; };
 		0E53A95521465CC900602E1A /* BeerSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A95321465C9B00602E1A /* BeerSampleData.swift */; };
 		0E53A9582146723700602E1A /* MockApiViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A9572146723700602E1A /* MockApiViewable.swift */; };
+		0E53A97C2147B3DA00602E1A /* SizeClassExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A97B2147B3DA00602E1A /* SizeClassExtension.swift */; };
+		0E53A9802147B57F00602E1A /* Sizeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E53A97F2147B57F00602E1A /* Sizeable.swift */; };
 		0E59254B2139685F0037F2CC /* SwiftCollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254A2139685F0037F2CC /* SwiftCollectionViewUITests.swift */; };
 		0E59254D213969DB0037F2CC /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */; };
 		0E59254E21396B880037F2CC /* AccessibilityLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */; };
@@ -99,6 +101,8 @@
 		0E53A95021465A9000602E1A /* MockApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiRepository.swift; sourceTree = "<group>"; };
 		0E53A95321465C9B00602E1A /* BeerSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerSampleData.swift; sourceTree = "<group>"; };
 		0E53A9572146723700602E1A /* MockApiViewable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiViewable.swift; sourceTree = "<group>"; };
+		0E53A97B2147B3DA00602E1A /* SizeClassExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeClassExtension.swift; sourceTree = "<group>"; };
+		0E53A97F2147B57F00602E1A /* Sizeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizeable.swift; sourceTree = "<group>"; };
 		0E59254A2139685F0037F2CC /* SwiftCollectionViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftCollectionViewUITests.swift; sourceTree = "<group>"; };
 		0E59254C213969DB0037F2CC /* AccessibilityLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityLabel.swift; sourceTree = "<group>"; };
 		0E6FBB0E213D0672000BCDC7 /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
@@ -230,8 +234,8 @@
 		0E21789C2121A3BD00680721 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0E21788E2121963C00680721 /* ImageViewExtension.swift */,
-				0E4434122125A4900055B736 /* ImageViewDownloadable.swift */,
+				0E53A97E2147B52500602E1A /* SizeClass */,
+				0E53A97D2147B51800602E1A /* ImageView */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -275,6 +279,24 @@
 				0E53A95321465C9B00602E1A /* BeerSampleData.swift */,
 			);
 			path = "Sample Data";
+			sourceTree = "<group>";
+		};
+		0E53A97D2147B51800602E1A /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0E4434122125A4900055B736 /* ImageViewDownloadable.swift */,
+				0E21788E2121963C00680721 /* ImageViewExtension.swift */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		0E53A97E2147B52500602E1A /* SizeClass */ = {
+			isa = PBXGroup;
+			children = (
+				0E53A97B2147B3DA00602E1A /* SizeClassExtension.swift */,
+				0E53A97F2147B57F00602E1A /* Sizeable.swift */,
+			);
+			path = SizeClass;
 			sourceTree = "<group>";
 		};
 		0E90B669213FE5CB00E5DF55 /* View */ = {
@@ -575,9 +597,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E6FBB0F213D0672000BCDC7 /* LocalizedString.swift in Sources */,
+				0E53A97C2147B3DA00602E1A /* SizeClassExtension.swift in Sources */,
 				0EF71F3021425B1D00730E57 /* Constants.swift in Sources */,
 				0E21788D21217B5C00680721 /* BeerDetailViewController.swift in Sources */,
 				0E4434132125A4900055B736 /* ImageViewDownloadable.swift in Sources */,
+				0E53A9802147B57F00602E1A /* Sizeable.swift in Sources */,
 				0E53A95521465CC900602E1A /* BeerSampleData.swift in Sources */,
 				0EF71F1E2142338500730E57 /* ApiPodHeader.swift in Sources */,
 				0E59254D213969DB0037F2CC /* AccessibilityLabel.swift in Sources */,

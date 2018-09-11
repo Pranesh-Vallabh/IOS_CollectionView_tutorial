@@ -8,7 +8,7 @@
 
 import Foundation
 import ApiPod
-class BeerSampleData {
+final class BeerSampleData {
     static func generateBeerData() -> [Beer] {
         return [
             Beer(name: "Buzz", tagline: "A Real Bitter Experience.", description: "A light, crisp and bitter IPA brewed with English and American hops. A small batch brewed only once.", imageUrl: "buzzImage"),
